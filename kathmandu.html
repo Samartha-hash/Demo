@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Kathmandu - Explore Nepal" data-es="Kathmandu - Explora Nepal" data-fr="Kathmandu - Explorez le Népal" data-ne="काठमाडौं - नेपाल अन्वेषण" data-hi="काठमांडू - एक्सप्लोर नेपाल" data-zh="加德满都 - 探索尼泊尔" data-ja="カトマンズ - ネパール探険">
+        Kathmandu - Explore Nepal
+    </title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cities.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Function to switch languages
+        function changeLanguage(language) {
+            // Find all elements with the 'translatable' class
+            document.querySelectorAll('.translatable').forEach(function (element) {
+                // Check if the element has a data attribute for the selected language
+                const translatedText = element.getAttribute('data-' + language);
+                if (translatedText) {
+                    element.innerHTML = translatedText; // Change the element's text to the translated text
+                }
+            });
+        }
+    </script>
+    
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <h1 class="text-center translatable" data-en="Kathmandu - Capital of Nepal" data-es="Kathmandu - Capital de Nepal" data-fr="Kathmandu - Capitale du Népal" data-ne="काठमाडौं - नेपालको राजधानी" data-hi="काठमांडू - नेपाल की राजधानी" data-zh="加德满都 - 尼泊尔的首都" data-ja="カトマンズ - ネパールの首都">
+                Kathmandu - Capital of Nepal
+            </h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Explore Nepal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link translatable" href="index.php" data-en="Home" data-es="Inicio" data-fr="Accueil" data-ne="गृहपृष्ठ" data-hi="होम" data-zh="首页" data-ja="ホーム">Home</a></li>
+                        <li class="nav-item"><a class="nav-link translatable" href="chitwan.html" data-en="Chitwan" data-es="Chitwan" data-fr="Chitwan" data-ne="चितवन" data-hi="चितवन" data-zh="奇特旺" data-ja="チトワン">Chitwan</a></li>
+                        <li class="nav-item"><a class="nav-link translatable" href="dharan.html" data-en="Dharan" data-es="Dharan" data-fr="Dharan" data-ne="धरान" data-hi="धरान" data-zh="达兰" data-ja="ダラン">Dharan</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Language Selector Dropdown -->
+            <select class="form-control w-auto ml-auto" style="max-width: 200px;" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ne">नेपाली</option>
+                <option value="hi">हिन्दी</option>
+                <option value="zh">中文</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center translatable" data-en="Kathmandu - The Cultural Hub" data-es="Kathmandu - El Centro Cultural" data-fr="Kathmandu - Le Centre Culturel" data-ne="काठमाडौं - सांस्कृतिक केन्द्र" data-hi="काठमांडू - सांस्कृतिक केंद्र" data-zh="加德满都 - 文化中心" data-ja="カトマンズ - 文化の中心">
+            Kathmandu - The Cultural Hub
+        </h2>
+        <p class="text-center translatable" data-en="Kathmandu, the capital of Nepal, is a city filled with rich culture, vibrant festivals, and historical landmarks. The city showcases Nepal’s diverse traditions, including Hinduism, Buddhism, and more. It is the heart of Nepal's culture, arts, and heritage." 
+           data-es="Kathmandu, la capital de Nepal, es una ciudad llena de rica cultura, vibrantes festivales y monumentos históricos. La ciudad muestra las diversas tradiciones de Nepal, incluidos el hinduismo, el budismo y más. Es el corazón de la cultura, las artes y la herencia de Nepal." 
+           data-fr="Kathmandu, la capitale du Népal, est une ville remplie de culture riche, de festivals vibrants et de sites historiques. La ville présente les diverses traditions du Népal, y compris l'hindouisme, le bouddhisme et plus encore. C'est le cœur de la culture, des arts et du patrimoine du Népal." 
+           data-ne="काठमाडौं, नेपालकी राजधानी, समृद्ध सांस्कृतिक, जीवित चाडपर्व र ऐतिहासिक स्थलहरूले भरिएको एक शहर हो। यस शहरले नेपालका विविध परम्पराहरू, जसमध्ये हिन्दू धर्म, बौद्ध धर्म र अरू समावेश छन्, प्रस्तुत गर्दछ। यो नेपालका संस्कृति, कला र धरोहरको मुटु हो।" 
+           data-hi="काठमांडू, नेपाल की राजधानी, एक शहर है जो समृद्ध संस्कृति, जीवंत त्योहारों और ऐतिहासिक स्थलचिह्नों से भरा हुआ है। यह शहर नेपाल की विविध परंपराओं को प्रदर्शित करता है, जिसमें हिंदू धर्म, बौद्ध धर्म और अन्य शामिल हैं। यह नेपाल की संस्कृति, कला और धरोहर का दिल है।" 
+           data-zh="加德满都是一座充满丰富文化、充满活力的节日和历史地标的城市。该城市展示了尼泊尔的多元传统，包括印度教、佛教等。它是尼泊尔文化、艺术和遗产的核心。" 
+           data-ja="カトマンズは、豊かな文化、活気に満ちた祭り、歴史的なランドマークに満ちた都市です。この都市はネパールの多様な伝統を紹介しており、ヒンドゥー教、仏教などが含まれています。ネパールの文化、芸術、遺産の中心地です。">
+            Kathmandu, the capital of Nepal, is a city filled with rich culture, vibrant festivals, and historical landmarks. The city showcases Nepal’s diverse traditions, including Hinduism, Buddhism, and more. It is the heart of Nepal's culture, arts, and heritage.
+        </p>
+        
+        <h3 class="translatable" data-en="Major ethnic groups in Kathmandu" data-es="Principales castas en Katmandú" data-fr="Principales castes à Katmandou" data-ne="काठमाण्डूका प्रमुख जातिहरू" data-hi="काठमांडू में प्रमुख जातियाँ" data-zh="加德满都的主要种姓" data-ja="カトマンズの主要なカースト">
+            Major ethnic groups in Kathmandu
+        </h3>
+
+        
+        <ul>
+            <div class="container my-5">
+                <div class="row g-4">
+                    <!-- Brahmin -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="bhramin.jpg" alt="Brahmin" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Brahmin" data-es="Brahmán" data-fr="Brahmane" data-ne="ब्राह्मण" data-hi="ब्राह्मण" data-zh="婆罗门" data-ja="ブラーマン">Brahmin</strong>
+                                <p class="translatable" data-en="Brahmins are one of the highest castes in Nepalese society. They are traditionally priests, scholars, and teachers, with a strong influence in religious and cultural practices." data-es="Los brahmanes son una de las castas más altas en la sociedad nepalí. Tradicionalmente son sacerdotes, eruditos y maestros, con una fuerte influencia en las prácticas religiosas y culturales." data-fr="Les brahmanes sont l'une des castes les plus élevées dans la société népalaise. Ils sont traditionnellement prêtres, érudits et enseignants, avec une forte influence dans les pratiques religieuses et culturelles." data-ne="ब्राह्मण नेपालका उच्च जाति मध्ये एक हो। यी परंपरागत रूपमा पुरोहित, विद्वान र शिक्षकको रूपमा रहेका छन् र धार्मिक र सांस्कृतिक अभ्यासहरूमा बलियो प्रभाव पर्छ।" data-hi="ब्राह्मण नेपाल में एक उच्च जाति हैं। ये पारंपरिक रूप से पुरोहित, विद्वान और शिक्षक होते हैं, और धार्मिक और सांस्कृतिक प्रथाओं में मजबूत प्रभाव रखते हैं।" data-zh="婆罗门是尼泊尔社会中的最高种姓之一。传统上，他们是祭司、学者和教师，在宗教和文化实践中具有强大影响力。" data-ja="ブラーマンはネパール社会で最も高いカーストの一つです。彼らは伝統的に僧侶、学者、教師であり、宗教的および文化的実践に強い影響を与えています。">Brahmins are one of the highest castes in Nepalese society. They are traditionally priests, scholars, and teachers, with a strong influence in religious and cultural practices.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Chhetri -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="chh.jpg" alt="Chhetri" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Chhetri" data-es="Chhetri" data-fr="Chhetri" data-ne="छेत्री" data-hi="छेत्री" data-zh="切特里" data-ja="チェトリ">Chhetri</strong>
+                                <p class="translatable" data-en="Chhetris are one of the most significant castes in Nepal. They are primarily associated with the military and administrative roles and hold a prominent place in Nepalese society." data-es="Los Chhetris son una de las castas más significativas en Nepal. Están principalmente asociados con roles militares y administrativos, y ocupan un lugar destacado en la sociedad nepalí." data-fr="Les Chhetris sont l'une des castes les plus importantes du Népal. Ils sont principalement associés aux rôles militaires et administratifs et occupent une place importante dans la société népalaise." data-ne="छेत्री नेपालका सबैभन्दा महत्त्वपूर्ण जाति मध्ये एक हो। यी प्रायः सैनिक र प्रशासनिक भूमिकामा संलग्न छन् र नेपालका समाजमा महत्त्वपूर्ण स्थान राख्छन्।" data-hi="छेत्री नेपाल में सबसे महत्वपूर्ण जातियों में से एक हैं। वे मुख्य रूप से सैन्य और प्रशासनिक भूमिकाओं से जुड़े होते हैं और नेपाल की समाज में एक प्रमुख स्थान रखते हैं।" data-zh="切特里是尼泊尔最重要的种姓之一。他们主要与军事和行政职能相关，并在尼泊尔社会中占有重要地位。" data-ja="チェトリはネパールで最も重要なカーストの一つです。彼らは主に軍事および行政の役割に関連しており、ネパール社会で重要な位置を占めています。">Chhetris are one of the most significant castes in Nepal. They are primarily associated with military and administrative roles and hold a prominent place in Nepalese society.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Newar -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="newar.jpg" alt="Newar" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Newar" data-es="Newar" data-fr="Newar" data-ne="नेवार" data-hi="नेवार" data-zh="纽瓦尔" data-ja="ニュワール">Newar</strong>
+                                <p class="translatable" data-en="The Newar people are the indigenous inhabitants of the Kathmandu Valley. They have a unique culture and language, and their social structure is distinct from the rest of the population." data-es="El pueblo Newar son los habitantes indígenas del Valle de Katmandú. Tienen una cultura y un idioma únicos, y su estructura social es distinta de la del resto de la población." data-fr="Le peuple Newar est les habitants indigènes de la vallée de Katmandou. Ils ont une culture et une langue uniques, et leur structure sociale est distincte de celle du reste de la population." data-ne="नेवार काठमाण्डू उपत्यकाका आदिवासी मानिस हुन्। उनीहरूको संस्कृति र भाषा विशेष छन्, र सामाजिक संरचना बाँकी जनसंख्याबाट फरक छ।" data-hi="नेवार काठमांडू घाटी के आदिवासी लोग हैं। उनकी संस्कृति और भाषा विशिष्ट है, और उनका सामाजिक ढांचा बाकी जनसंख्या से अलग है।" data-zh="纽瓦尔人是加德满都谷地的土著居民。他们拥有独特的文化和语言，社会结构也与其他人群不同。" data-ja="ニュワールの人々はカトマンズ渓谷の先住民です。彼らは独自の文化と言語を持っており、その社会構造は他の人々とは異なっています。">The Newar people are the indigenous inhabitants of the Kathmandu Valley. They have a unique culture and language, and their social structure is distinct from the rest of the population.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        
+        <h3 class="translatable" data-en="Major Festivals in Kathmandu" data-es="Festivales principales en Kathmandu" data-fr="Principaux festivals à Kathmandu" data-ne="काठमाडौंका प्रमुख पर्वहरू" data-hi="काठमांडू में प्रमुख त्योहार" data-zh="加德满都的主要节日" data-ja="カトマンズの主要な祭り">
+            Major Festivals in Kathmandu
+        </h3>
+        <ul>
+            <div class="container my-5">
+                <div class="row g-4">
+                    <!-- Indra Jatra -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="indra.png" alt="Indra Jatra" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Indra Jatra" data-es="Indra Jatra" data-fr="Indra Jatra" data-ne="इन्द्र जात्रा" data-hi="इन्द्र जात्रा" data-zh="因德拉贾特拉" data-ja="インドラ・ジャトラ">Indra Jatra</strong>
+                                <p class="translatable" data-en="A festival that honors the god of rain, Indra, and the living goddess Kumari. It's a multi-day festival that celebrates Nepalese culture and spirituality." data-es="Un festival que honra al dios de la lluvia, Indra, y la diosa viviente Kumari. Es un festival de varios días que celebra la cultura y espiritualidad nepalí." data-fr="Un festival qui honore le dieu de la pluie, Indra, et la déesse vivante Kumari. C'est un festival de plusieurs jours qui célèbre la culture et la spiritualité népalaises." data-ne="वर्षा देवता इन्द्र र जीवित देवी कुमारीको सम्मान गर्न मनाइने एक बहुपदत्त पर्व। यो चाडपर्व नेपालका संस्कृति र आध्यात्मिकता मनाउनका लागि आयोजना गरिएको छ।" data-hi="यह त्योहार वर्षा के देवता इन्द्र और जीवित देवी कुमारी का सम्मान करता है। यह एक बहु-दिनों तक चलने वाला त्योहार है जो नेपाली संस्कृति और आध्यात्मिकता का उत्सव है।" data-zh="一个庆祝雨神因德拉和活女神库玛里的节日。它是一个多日的节日，庆祝尼泊尔的文化和精神。" data-ja="雨の神インドラと生ける女神クマリを称える祭り。これはネパールの文化と精神性を祝う多日間の祭りです。">A festival that honors the god of rain, Indra, and the living goddess Kumari. It's a multi-day festival that celebrates Nepalese culture and spirituality.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                
+                    <!-- Maha Shivaratri -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="shiv.jpg" alt="Maha Shivaratri" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Maha Shivaratri" data-es="Maha Shivaratri" data-fr="Maha Shivaratri" data-ne="महाशिवरात्रि" data-hi="महाशिवरात्रि" data-zh="大湿婆夜" data-ja="マハ・シヴァラートリ">Maha Shivaratri</strong>
+                                <p class="translatable" data-en="A festival that celebrates Lord Shiva. It's celebrated with prayers, fasting, and a large gathering at the Pashupatinath Temple in Kathmandu." data-es="Un festival que celebra al Señor Shiva. Se celebra con oraciones, ayuno y una gran concentración en el templo Pashupatinath en Katmandú." data-fr="Un festival qui célèbre le Seigneur Shiva. Il est célébré avec des prières, un jeûne et un grand rassemblement au temple Pashupatinath à Katmandou." data-ne="भगवान शिवको सम्मानमा मनाइने एक पर्व। यो पर्व पशुपतिनाथ मन्दिरमा प्रार्थना, उपवास र ठूलो सभा सहित मनाइन्छ।" data-hi="यह भगवान शिव का उत्सव है। यह पशुपतिनाथ मंदिर में प्रार्थनाओं, उपवास और एक बड़ी सभा के साथ मनाया जाता है।" data-zh="庆祝湿婆神的节日。它通过祈祷、禁食以及在加德满都的帕舒帕蒂纳寺庙举行大规模集会来庆祝。" data-ja="シヴァ神を祝う祭り。カトマンズのパシュパティナート寺院で祈り、断食、そして大規模な集会で祝われます。">A festival that celebrates Lord Shiva. It's celebrated with prayers, fasting, and a large gathering at the Pashupatinath Temple in Kathmandu.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Gai Jatra -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="Gai.png" alt="Gai Jatra" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Gai Jatra" data-es="Gai Jatra" data-fr="Gai Jatra" data-ne="गाई जात्रा" data-hi="गाई जात्रा" data-zh="牛节" data-ja="ガイ・ジャトラ">Gai Jatra</strong>
+                                <p class="translatable" data-en="A festival of cows celebrated to commemorate those who have passed away. Families lead a cow procession through the streets, symbolizing the journey of the departed souls to the afterlife." data-es="Un festival de vacas celebrado para conmemorar a los que han fallecido. Las familias llevan una procesión de vacas por las calles, simbolizando el viaje de las almas fallecidas al más allá." data-fr="Un festival des vaches célébré pour commémorer ceux qui sont décédés. Les familles mènent une procession de vaches dans les rues, symbolisant le voyage des âmes des défunts vers l'au-delà." data-ne="गाई जात्रा, जसमा बितेका व्यक्तिहरूलाई सम्झना गरिन्छ। परिवारहरूले गाईको जुलुस निकाली मृत आत्माहरूको परलोक यात्रा प्रतीक गर्छन्।" data-hi="गाई जात्रा, जिसे मृतकों की स्मृति में मनाया जाता है। परिवार गाई की शोभायात्रा निकालते हैं, जो मृत आत्माओं की परलोक यात्रा का प्रतीक है।" data-zh="庆祝牛节，以纪念那些已逝的人。家庭在街道上带领牛群游行，象征着亡灵前往来世的旅程。" data-ja="亡くなった人々を追悼するための牛の祭り。家族は牛の行列を街中で行い、亡くなった魂の来世への旅を象徴します。">A festival of cows celebrated to commemorate those who have passed away. Families lead a cow procession through the streets, symbolizing the journey of the departed souls to the afterlife.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </ul>
+
+        <h3 class="translatable" data-en="Traditional Foods of Kathmandu" data-es="Comidas tradicionales de Katmandú" data-fr="Aliments traditionnels de Katmandou" data-ne="काठमाण्डौका पारंपरिक खाना" data-hi="काठमांडू के पारंपरिक भोजन" data-zh="加德满都的传统食物" data-ja="カトマンズの伝統的な料理">
+            Traditional Foods of Kathmandu
+            </h3>
+            
+        
+        <ul>
+            <div class="container my-5">
+                <div class="row g-4">
+                    <!-- Brahmin Food -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="bhr.jpg" alt="Brahmin Food" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Brahmin Food" data-es="Comida Brahmin" data-fr="Nourriture Brahmin" data-ne="ब्राह्मणको खाना" data-hi="ब्राह्मण का खाना" data-zh="婆罗门食物" data-ja="ブラフミンの食べ物">
+                                    Brahmin Food
+                                </strong>
+                                <p class="translatable" data-en="Brahmins are known for their vegetarian food, which includes dishes like rice, dal, vegetables, and pickles, often served with ghee." data-es="Los brahmanes son conocidos por su comida vegetariana, que incluye platos como arroz, dal, verduras y encurtidos, a menudo servidos con ghee." data-fr="Les brahmanes sont connus pour leur cuisine végétarienne, qui comprend des plats comme du riz, du dal, des légumes et des pickles, souvent servis avec du ghee." data-ne="ब्राह्मणहरू प्राय: शाकाहारी खाना खान्छन्, जसमा चामल, दाल, तरकारी र अचार जस्ता परिकारहरू समावेश हुन्छन्, प्राय: घिउसँग परोसीन्छ।" data-hi="ब्राह्मण अपनी शाकाहारी भोजन के लिए जाने जाते हैं, जिसमें चावल, दाल, सब्जियाँ और अचार जैसे व्यंजन शामिल होते हैं, जो अक्सर घी के साथ परोसे जाते हैं।" data-zh="婆罗门以其素食食物而闻名，包括米饭、达尔、蔬菜和腌菜，通常配有酥油。" data-ja="ブラフミンはそのベジタリアン料理で知られており、ライス、ダール、野菜、ピクルスなどの料理が含まれ、しばしばギーと一緒に提供されます。">
+                                    Brahmins are known for their vegetarian food, which includes dishes like rice, dal, vegetables, and pickles, often served with ghee.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Chhetri Food -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="chhe.webp" alt="Chhetri Food" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Chhetri Food" data-es="Comida Chhetri" data-fr="Nourriture Chhetri" data-ne="छेत्रीको खाना" data-hi="छेत्री का खाना" data-zh="切特里食物" data-ja="チェトリの食べ物">
+                                    Chhetri Food
+                                </strong>
+                                <p class="translatable" data-en="Chhetris enjoy a mix of vegetarian and meat-based dishes. Popular meals include rice, dal, curd, and meat curries, often accompanied by bread." data-es="Los chhetris disfrutan de una mezcla de platos vegetarianos y a base de carne. Las comidas populares incluyen arroz, dal, yogur y curries de carne, a menudo acompañados de pan." data-fr="Les chhetris apprécient un mélange de plats végétariens et à base de viande. Les repas populaires incluent du riz, du dal, du yaourt et des currys de viande, souvent accompagnés de pain." data-ne="छेत्रीहरू शाकाहारी र मांसाहारी परिकारहरूको मिश्रण रुचाउँछन्। लोकप्रिय भोजनहरूमा चामल, दाल, दही र मासुका करीहरू समावेश छन्, प्राय: रोटीसँग परोसीन्छ।" data-hi="छेत्री मांसाहारी और शाकाहारी भोजन का मिश्रण पसंद करते हैं। लोकप्रिय भोजन में चावल, दाल, दही और मांस करी शामिल हैं, जो अक्सर रोटी के साथ परोसे जाते हैं।" data-zh="切特里喜欢素食和肉类菜肴的混合。常见的餐点包括米饭、达尔、酸奶和肉类咖喱，通常配有面包。" data-ja="チェトリはベジタリアンと肉をベースにした料理のミックスを楽しみます。人気のある料理にはライス、ダール、ヨーグルト、肉のカレーが含まれ、しばしばパンと一緒に提供されます。">
+                                    Chhetris enjoy a mix of vegetarian and meat-based dishes. Popular meals include rice, dal, curd, and meat curries, often accompanied by bread.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Newar Food -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="new.jpg" alt="Newar Food" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Newar Food" data-es="Comida Newar" data-fr="Nourriture Newar" data-ne="नेवारको खाना" data-hi="नेवार का खाना" data-zh="纽瓦尔食物" data-ja="ニュワールの食べ物">
+                                    Newar Food
+                                </strong>
+                                <p class="translatable" data-en="Newars have a rich culinary tradition, with foods like ‘choela’ (spicy grilled meat), ‘yomari’ (sweet steamed dumplings), and various kinds of pickles and chutneys." data-es="Los Newar tienen una rica tradición culinaria, con alimentos como ‘choela’ (carne asada picante), ‘yomari’ (empanadillas dulces al vapor) y varios tipos de encurtidos y salsas." data-fr="Les Newars ont une riche tradition culinaire, avec des plats comme le ‘choela’ (viande grillée épicée), le ‘yomari’ (boulettes sucrées cuites à la vapeur) et divers types de pickles et de chutneys." data-ne="नेवारहरूको एक समृद्ध पाक परंपरा छ, जसमा ‘चोला’ (मसालेदार ग्रिल गरिएको मासु), ‘योमरी’ (मीठो स्टीम्ड डम्पलिङ) र विभिन्न प्रकारका अचार र चटनीहरू समावेश छन्।" data-hi="नेवारों की एक समृद्ध पाक परंपरा है, जिसमें ‘चोला’ (मसालेदार ग्रिल किया हुआ मांस), ‘योमरी’ (मीठे स्टीम्ड डंपलिंग्स), और विभिन्न प्रकार के अचार और चटनी शामिल हैं।" data-zh="纽瓦尔人有着丰富的烹饪传统，食物如‘choela’（辣烤肉）、‘yomari’（甜蒸饺子）以及各种腌菜和酸辣酱。" data-ja="ニュワールには豊かな料理の伝統があり、「チョエラ」（スパイシーなグリル肉）や「ヨマリ」（甘い蒸し餃子）、さまざまな種類のピクルスやチャツネなどがあります。">
+                                    Newars have a rich culinary tradition, with foods like ‘choela’ (spicy grilled meat), ‘yomari’ (sweet steamed dumplings), and various kinds of pickles and chutneys.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        <h3 class="translatable" data-en="Cultural Sites in Kathmandu" data-es="Sitios culturales en Katmandú" data-fr="Sites culturels à Katmandou" data-ne="काठमाण्डूका सांस्कृतिक स्थलहरू" data-hi="काठमांडू में सांस्कृतिक स्थल" data-zh="加德满都的文化景点" data-ja="カトマンズの文化的な場所">
+            Cultural Sites in Kathmandu
+        </h3>
+
+        <ul>
+            <div class="container my-5">
+                <div class="row g-4">
+                <!-- Swayambhunath -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                        <img src="swa.jpg" alt="Swayambhunath" class="card-img-top img-fluid rounded">
+                        <div class="card-body">
+                            <strong class="translatable d-block mb-2" data-en="Swayambhunath (Monkey Temple)" data-es="Swayambhunath (Templo de los Monos)" data-fr="Swayambhunath (Temple des Singes)" data-ne="स्वयम्भूनाथ (बाँदर मन्दिर)" data-hi="स्वयम्भूनाथ (बंदर मंदिर)" data-zh="斯瓦扬布纳特（猴庙）" data-ja="スワヤンブナート（モンキーテンプル）">
+                                Swayambhunath (Monkey Temple)
+                            </strong>
+                            <p class="translatable" data-en="Swayambhunath is an ancient religious site atop a hill. It offers panoramic views of Kathmandu and is known for its iconic stupa surrounded by prayer wheels." data-es="Swayambhunath es un antiguo sitio religioso en la cima de una colina. Ofrece vistas panorámicas de Katmandú y es conocido por su icónica estupa rodeada de ruedas de oración." data-fr="Swayambhunath est un ancien site religieux au sommet d'une colline. Il offre une vue panoramique de Katmandou et est connu pour son stupa emblématique entouré de roues à prières." data-ne="स्वयम्भूनाथ एक पुरानो धार्मिक स्थल हो, जसले काठमाण्डूको मनोरम दृश्य प्रस्तुत गर्दछ र प्रार्थना गर्ने चक्रहरूले घेरिएको स्तूपको लागि प्रसिद्ध छ।" data-hi="स्वयम्भूनाथ एक प्राचीन धार्मिक स्थल है, जो पहाड़ी पर स्थित है। यह काठमांडू का मनोरम दृश्य प्रदान करता है और प्रार्थना चक्रों से घिरे अपने प्रतिष्ठित स्तूप के लिए प्रसिद्ध है।" data-zh="斯瓦扬布纳特是一处位于山顶的古老宗教遗址，提供加德满都的全景，以其周围环绕着祈祷轮的标志性佛塔而闻名。" data-ja="スワヤンブナートは丘の上にある古代の宗教遺跡です。カトマンズのパノラマビューを提供し、祈りの輪に囲まれた象徴的な仏塔で知られています。">
+                                Swayambhunath is an ancient religious site atop a hill. It offers panoramic views of Kathmandu and is known for its iconic stupa surrounded by prayer wheels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pashupatinath Temple -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <img src="pashu.jpg" alt="Pashupatinath Temple" class="card-img-top img-fluid rounded">
+                        <div class="card-body">
+                            <strong class="translatable d-block mb-2" data-en="Pashupatinath Temple" data-es="Templo Pashupatinath" data-fr="Temple Pashupatinath" data-ne="पशुपतिनाथ मन्दिर" data-hi="पशुपतिनाथ मंदिर" data-zh="帕舒帕蒂纳特寺" data-ja="パシュパティナート寺院">
+                                Pashupatinath Temple
+                            </strong>
+                            <p class="translatable" data-en="Pashupatinath Temple is one of the holiest Hindu temples, dedicated to Lord Shiva. It is a UNESCO World Heritage Site and an important cultural and spiritual center." data-es="El Templo Pashupatinath es uno de los templos hindúes más sagrados, dedicado al Señor Shiva. Es un sitio del Patrimonio Mundial de la UNESCO y un importante centro cultural y espiritual." data-fr="Le Temple Pashupatinath est l'un des temples hindous les plus sacrés, dédié au Seigneur Shiva. C'est un site du patrimoine mondial de l'UNESCO et un important centre culturel et spirituel." data-ne="पशुपतिनाथ मन्दिर सबैभन्दा पवित्र हिन्दू मन्दिरहरूमध्ये एक हो, भगवान शिवलाई समर्पित। यो UNESCO विश्व सम्पदा स्थल हो र एक महत्त्वपूर्ण सांस्कृतिक र आध्यात्मिक केन्द्र हो।" data-hi="पशुपतिनाथ मंदिर भगवान शिव को समर्पित सबसे पवित्र हिंदू मंदिरों में से एक है। यह एक यूनेस्को विश्व धरोहर स्थल है और एक महत्वपूर्ण सांस्कृतिक और आध्यात्मिक केंद्र है।" data-zh="帕舒帕蒂纳特寺是最神圣的印度教寺庙之一，供奉湿婆神。它是联合国教科文组织世界遗产地，也是一个重要的文化和精神中心。" data-ja="パシュパティナート寺院は、シヴァ神に捧げられた最も神聖なヒンドゥー教寺院の一つです。ユネスコの世界遺産に登録されており、重要な文化的・精神的中心地です。">
+                                Pashupatinath Temple is one of the holiest Hindu temples, dedicated to Lord Shiva. It is a UNESCO World Heritage Site and an important cultural and spiritual center.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kathmandu Durbar Square -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <img src="kds.jpg" alt="Kathmandu Durbar Square" class="card-img-top img-fluid rounded">
+                        <div class="card-body">
+                            <strong class="translatable d-block mb-2" data-en="Kathmandu Durbar Square" data-es="Plaza Durbar de Katmandú" data-fr="Place Durbar de Katmandou" data-ne="काठमाण्डू दरबार क्षेत्र" data-hi="काठमांडू दरबार स्क्वायर" data-zh="加德满都杜巴广场" data-ja="カトマンズ・ダルバール広場">
+                                Kathmandu Durbar Square
+                            </strong>
+                            <p class="translatable" data-en="Kathmandu Durbar Square is a historical site filled with palaces, courtyards, and temples. It is a UNESCO World Heritage Site and reflects the city's rich history and architecture." data-es="La Plaza Durbar de Katmandú es un sitio histórico lleno de palacios, patios y templos. Es un sitio del Patrimonio Mundial de la UNESCO y refleja la rica historia y arquitectura de la ciudad." data-fr="La Place Durbar de Katmandou est un site historique rempli de palais, de cours et de temples. C'est un site du patrimoine mondial de l'UNESCO qui reflète la riche histoire et l'architecture de la ville." data-ne="काठमाण्डू दरबार क्षेत्र दरबारहरू, आँगनहरू र मन्दिरहरूले भरिएको ऐतिहासिक स्थल हो। यो UNESCO विश्व सम्पदा स्थल हो र शहरको समृद्ध इतिहास र वास्तुकलालाई प्रतिबिम्बित गर्दछ।" data-hi="काठमांडू दरबार स्क्वायर महलों, आँगनों और मंदिरों से भरा एक ऐतिहासिक स्थल है। यह यूनेस्को की विश्व धरोहर स्थल है और शहर के समृद्ध इतिहास और वास्तुकला को दर्शाता है।" data-zh="加德满都杜巴广场是一个历史遗址，充满了宫殿、庭院和寺庙。它是联合国教科文组织世界遗产地，反映了城市丰富的历史和建筑。" data-ja="カトマンズ・ダルバール広場は宮殿、中庭、寺院が満載の歴史的な場所です。ユネスコの世界遺産に登録されており、都市の豊かな歴史と建築を反映しています。">
+                                Kathmandu Durbar Square is a historical site filled with palaces, courtyards, and temples. It is a UNESCO World Heritage Site and reflects the city's rich history and architecture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </ul>
+
+    </div>
+
+    <footer class="custom-footer-bg text-white text-center py-3">
+        <p class="translatable" data-en="© 2025 Explore Nepal. All rights reserved." data-es="© 2025 Explora Nepal. Todos los derechos reservados." data-fr="© 2025 Explorez le Népal. Tous droits réservés." data-ne="© 2025 नेपाल अन्वेषण। सबै अधिकार सुरक्षित।" data-hi="© 2025 Explore Nepal. सर्वाधिकार सुरक्षित।" data-zh="© 2025 探索尼泊尔。版权所有。" data-ja="© 2025 ネパール探険。すべての権利を保有。">
+            © 2025 Explore Nepal. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>

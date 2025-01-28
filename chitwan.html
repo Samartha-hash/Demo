@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Chitwan - Nature's Paradise" data-es="Chitwan - Paraíso Natural" data-fr="Chitwan - Paradis Naturel" data-ne="चितवन - प्रकृतिको स्वर्ग" data-hi="चितवन - प्रकृति का स्वर्ग" data-zh="奇特旺 - 大自然的天堂" data-ja="チトワン - 自然の楽園">
+        Chitwan - Nature's Paradise
+    </title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cities.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Function to switch languages
+        function changeLanguage(language) {
+            // Find all elements with the 'translatable' class
+            document.querySelectorAll('.translatable').forEach(function (element) {
+                // Check if the element has a data attribute for the selected language
+                const translatedText = element.getAttribute('data-' + language);
+                if (translatedText) {
+                    element.innerHTML = translatedText; // Change the element's text to the translated text
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <h1 class="text-center translatable" data-en="Chitwan - Nature's Paradise" data-es="Chitwan - Paraíso Natural" data-fr="Chitwan - Paradis Naturel" data-ne="चितवन - प्रकृतिको स्वर्ग" data-hi="चितवन - प्रकृति का स्वर्ग" data-zh="奇特旺 - 大自然的天堂" data-ja="チトワン - 自然の楽園">
+                Chitwan - Nature's Paradise
+            </h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Explore Nepal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link translatable" href="index.php" data-en="Home" data-es="Inicio" data-fr="Accueil" data-ne="गृहपृष्ठ" data-hi="होम" data-zh="首页" data-ja="ホーム">Home</a></li>
+                        <li class="nav-item"><a class="nav-link translatable" href="kathmandu.html" data-en="Kathmandu" data-es="Kathmandu" data-fr="Kathmandu" data-ne="काठमाडौं" data-hi="काठमांडू" data-zh="加德满都" data-ja="カトマンズ">Kathmandu</a></li>
+                        <li class="nav-item"><a class="nav-link translatable" href="dharan.html" data-en="Dharan" data-es="Dharan" data-fr="Dharan" data-ne="धरान" data-hi="धरान" data-zh="达兰" data-ja="ダラン">Dharan</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Language Selector Dropdown -->
+            <select class="form-control w-auto ml-auto" style="max-width: 200px;" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ne">नेपाली</option>
+                <option value="hi">हिन्दी</option>
+                <option value="zh">中文</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center translatable" data-en="Chitwan - A Wildlife and Adventure Haven" data-es="Chitwan - Un refugio de vida silvestre y aventura" data-fr="Chitwan - Un havre de faune et d'aventure" data-ne="चितवन - वन्यजन्तु र साहसिक यात्रा स्थल" data-hi="चितवन - वन्यजीव और साहसिक स्थल" data-zh="奇特旺 - 野生动物和冒险天堂" data-ja="チトワン - 野生動物と冒険の楽園">
+            Chitwan - A Wildlife and Adventure Haven
+        </h2>
+        <p class="text-center translatable" data-en="Chitwan, located in the Terai region of Nepal, is a popular destination for wildlife enthusiasts and adventure seekers. With its rich biodiversity and cultural heritage, it offers a range of activities like jungle safaris, bird watching, and cultural performances."
+           data-es="Chitwan, ubicado en la región del Terai de Nepal, es un destino popular para los entusiastas de la vida silvestre y los buscadores de aventuras. Con su rica biodiversidad y herencia cultural, ofrece una variedad de actividades como safaris en la jungla, observación de aves y presentaciones culturales." 
+           data-fr="Chitwan, situé dans la région du Terai au Népal, est une destination populaire pour les amateurs de faune et les amateurs d'aventure. Avec sa riche biodiversité et son patrimoine culturel, il offre une gamme d'activités telles que des safaris dans la jungle, l'observation des oiseaux et des spectacles culturels."
+           data-ne="चितवन, नेपालको तराई क्षेत्रमा स्थित, वन्यजन्तु प्रेमी र साहसिक गतिविधिका खोजी गर्नेहरूको लागि एक लोकप्रिय गन्तव्य हो। यसको धनी जैव विविधता र सांस्कृतिक धरोहरसँगै, यहाँ जंगल सफारी, पक्षी अवलोकन, र सांस्कृतिक प्रदर्शनी जस्ता गतिविधिहरू उपलब्ध छन्।" 
+           data-hi="चितवन, नेपाल के तराई क्षेत्र में स्थित है, यह वन्यजीव प्रेमियों और साहसिक गतिविधियों के प्रेमियों के लिए एक लोकप्रिय गंतव्य है। अपनी समृद्ध जैव विविधता और सांस्कृतिक धरोहर के साथ, यह जंगल सफारी, पक्षी अवलोकन, और सांस्कृतिक प्रस्तुतियों जैसी कई गतिविधियाँ प्रदान करता है।" 
+           data-zh="奇特旺位于尼泊尔的特赖地区，是野生动物爱好者和冒险寻求者的热门目的地。凭借其丰富的生物多样性和文化遗产，这里提供了一系列活动，如丛林探险、观鸟和文化表演。" 
+           data-ja="チトワンはネパールのテライ地域に位置し、野生動物愛好家や冒険好きな人々に人気のある目的地です。豊かな生物多様性と文化遺産を持ち、ジャングルサファリ、バードウォッチング、文化的なパフォーマンスなど、さまざまなアクティビティを提供しています。">
+            Chitwan, located in the Terai region of Nepal, is a popular destination for wildlife enthusiasts and adventure seekers. With its rich biodiversity and cultural heritage, it offers a range of activities like jungle safaris, bird watching, and cultural performances.
+        </p>
+        
+        <h3 class="translatable" data-en="Top Attractions in Chitwan" data-es="Principales atracciones en Chitwan" data-fr="Principales attractions à Chitwan" data-ne="चितवनका प्रमुख आकर्षण" data-hi="चितवन में शीर्ष आकर्षण" data-zh="奇特旺的主要景点" data-ja="チトワンの主な観光地">
+            Top Attractions in Chitwan
+        </h3>
+        <ul>
+            <li class="translatable" data-en="Chitwan National Park - A UNESCO World Heritage site, famous for its diverse wildlife, including rhinos, tigers, and elephants."
+                data-es="Parque Nacional de Chitwan - Un sitio del Patrimonio Mundial de la UNESCO, famoso por su diversa fauna, incluidos los rinocerontes, tigres y elefantes."
+                data-fr="Parc national de Chitwan - Un site du patrimoine mondial de l'UNESCO, célèbre pour sa faune diversifiée, y compris les rhinocéros, les tigres et les éléphants."
+                data-ne="चितवन राष्ट्रिय निकुञ्ज - युनेस्को विश्व धरोहर स्थल, यसको विविध वन्यजन्तु जस्तै गैंडा, बाघ र हात्तीहरूको लागि प्रसिद्ध।"
+                data-hi="चितवन राष्ट्रीय उद्यान - एक यूनेस्को विश्व धरोहर स्थल, जो अपनी विविध वन्यजीवों के लिए प्रसिद्ध है, जिसमें गैंडे, बाघ और हाथी शामिल हैं।"
+                data-zh="奇特旺国家公园 - 联合国教科文组织世界遗产地，以其丰富的野生动植物而闻名，包括犀牛、老虎和大象。"
+                data-ja="チトワン国立公園 - ユネスコの世界遺産に登録されており、サイ、トラ、象などの多様な野生動物で有名です。">
+                Chitwan National Park - A UNESCO World Heritage site, famous for its diverse wildlife, including rhinos, tigers, and elephants.
+            </li>
+            <h3 class="translatable" data-en="Major ethnic groups in Chitwan" data-es="Principales castas en Chitwan" data-fr="Principales castes à Chitwan" data-ne="चितवनका प्रमुख जातिहरू" data-hi="चितवन में प्रमुख जातियाँ" data-zh="奇特旺的主要种姓" data-ja="チトワンの主要なカースト">
+                Major ethnic groups in Chitwan
+            </h3>
+            
+            <ul>
+                <div class="container my-5">
+                    <div class="row g-4">
+                        <!-- Tharu -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="Tharu.png" alt="Tharu" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Tharu" data-es="Tharu" data-fr="Tharu" data-ne="थारू" data-hi="थारू" data-zh="塔鲁" data-ja="タル">Tharu</strong>
+                                    <p class="translatable" data-en="The Tharu people are the indigenous community of Chitwan. They have their own unique traditions, language, and are known for their close connection to nature and forest-based lifestyles." data-es="El pueblo Tharu es la comunidad indígena de Chitwan. Tienen sus propias tradiciones únicas, idioma y son conocidos por su estrecha conexión con la naturaleza y el estilo de vida basado en el bosque." data-fr="Le peuple Tharu est la communauté indigène de Chitwan. Ils ont leurs propres traditions uniques, langue, et sont connus pour leur lien étroit avec la nature et leur mode de vie basé sur la forêt." data-ne="थारू चितवनका आदिवासी समुदाय हुन्। उनीहरूको आफ्नै विशेष परंपरा, भाषा छन् र प्रकृति र जंगलसँगको नजिकको सम्बन्धका लागि परिचित छन्।" data-hi="थारू चितवन के आदिवासी समुदाय हैं। उनकी अपनी विशिष्ट परंपराएँ, भाषा हैं और वे प्रकृति और जंगल-आधारित जीवनशैली के साथ करीबी संबंध के लिए जाने जाते हैं।" data-zh="塔鲁人是奇特旺的土著社区。他们有自己独特的传统、语言，并以其与自然和森林生活的密切联系而闻名。" data-ja="タルの人々はチトワンの先住民コミュニティです。彼らは独自の伝統、言語を持ち、自然や森林に密接に関連する生活で知られています。">The Tharu people are the indigenous community of Chitwan. They have their own unique traditions, language, and are known for their close connection to nature and forest-based lifestyles.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Brahmin -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="bhramin.jpg" alt="Brahmin" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Brahmin" data-es="Brahmán" data-fr="Brahmane" data-ne="ब्राह्मण" data-hi="ब्राह्मण" data-zh="婆罗门" data-ja="ブラーマン">Brahmin</strong>
+                                    <p class="translatable" data-en="Brahmins in Chitwan, similar to other parts of Nepal, are traditionally priests and scholars who play a vital role in religious and cultural events." data-es="Los brahmanes en Chitwan, similares a otras partes de Nepal, son tradicionalmente sacerdotes y eruditos que desempeñan un papel vital en los eventos religiosos y culturales." data-fr="Les brahmanes de Chitwan, comme dans d'autres parties du Népal, sont traditionnellement prêtres et érudits qui jouent un rôle essentiel dans les événements religieux et culturels." data-ne="चितवनका ब्राह्मणहरू, नेपालका अन्य भागहरू जस्तै परंपरागत रूपमा पुरोहित र विद्वान् हुन्, जसले धार्मिक र सांस्कृतिक घटनाहरूमा महत्त्वपूर्ण भूमिका खेल्छन्।" data-hi="चितवन के ब्राह्मण, नेपाल के अन्य भागों की तरह, पारंपरिक रूप से पुरोहित और विद्वान होते हैं, जो धार्मिक और सांस्कृतिक आयोजनों में महत्वपूर्ण भूमिका निभाते हैं।" data-zh="奇特旺的婆罗门与尼泊尔其他地区的婆罗门类似，传统上是祭司和学者，在宗教和文化活动中起着重要作用。" data-ja="チトワンのブラーマンは、ネパールの他の地域と同様に、伝統的に僧侶や学者であり、宗教的および文化的なイベントで重要な役割を果たします。">Brahmins in Chitwan, similar to other parts of Nepal, are traditionally priests and scholars who play a vital role in religious and cultural events.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Chhetri -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="chh.jpg" alt="Chhetri" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Chhetri" data-es="Chhetri" data-fr="Chhetri" data-ne="छेत्री" data-hi="छेत्री" data-zh="切特里" data-ja="チェトリ">Chhetri</strong>
+                                    <p class="translatable" data-en="Chhetris in Chitwan are primarily involved in administrative and military roles. They have a notable presence and contribute significantly to the local community." data-es="Los Chhetris en Chitwan están principalmente involucrados en roles administrativos y militares. Tienen una presencia notable y contribuyen significativamente a la comunidad local." data-fr="Les Chhetris de Chitwan sont principalement impliqués dans des rôles administratifs et militaires. Ils ont une présence notable et contribuent de manière significative à la communauté locale." data-ne="चितवनका छेत्रीहरू मुख्यतया प्रशासनिक र सैनिक भूमिकामा संलग्न छन्। उनीहरूले महत्त्वपूर्ण उपस्थिति राख्छन् र स्थानीय समुदायमा उल्लेखनीय योगदान गर्छन्।" data-hi="चितवन के छेत्री मुख्य रूप से प्रशासनिक और सैन्य भूमिकाओं में शामिल हैं। वे उल्लेखनीय उपस्थिति रखते हैं और स्थानीय समुदाय में महत्वपूर्ण योगदान करते हैं।" data-zh="奇特旺的切特里主要从事行政和军事职能，在当地社区中占有显著地位。" data-ja="チトワンのチェトリは主に行政および軍事の役割に従事しており、地元のコミュニティに重要な貢献をしています。">Chhetris in Chitwan are primarily involved in administrative and military roles. They have a notable presence and contribute significantly to the local community.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            <h3 class="translatable" data-en="Major Festivals in Chitwan" data-es="Festivales principales en Chitwan" data-fr="Principaux festivals à Chitwan" data-ne="चितवनका प्रमुख पर्वहरू" data-hi="चितवन में प्रमुख त्योहार" data-zh="奇特旺的主要节日" data-ja="チトワンの主要な祭り">
+                Major Festivals in Chitwan
+            </h3>
+            <ul>
+                <div class="container my-5">
+                    <div class="row g-4">
+                        <!-- Chhath Festival -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="chhath.png" alt="Chhath Festival" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Chhath Festival" data-es="Festival de Chhath" data-fr="Festival de Chhath" data-ne="छठ पर्व" data-hi="छठ पर्व" data-zh="查塔节" data-ja="チャト祭">Chhath Festival</strong>
+                                    <p class="translatable" data-en="A festival dedicated to the Sun God, celebrated by offering prayers and performing rituals on the banks of rivers or ponds during sunrise and sunset." data-es="Un festival dedicado al dios del sol, celebrado con oraciones y rituales en las orillas de los ríos o estanques al amanecer y al atardecer." data-fr="Un festival dédié au dieu du soleil, célébré avec des prières et des rituels sur les rives des rivières ou des étangs au lever et au coucher du soleil." data-ne="सूर्य देवताका लागि समर्पित एक पर्व। यो चाड सूर्यास्त र सूर्योदयको समयमा नदी र पोखरीका किनारमा प्रार्थना र अनुष्ठानद्वारा मनाइन्छ।" data-hi="सूर्य देव को समर्पित एक पर्व। यह त्योहार नदी या तालाब के किनारे सूर्योदय और सूर्यास्त के समय प्रार्थना और अनुष्ठान के साथ मनाया जाता है।" data-zh="一个献给太阳神的节日，通过在日出和日落时在河流或池塘边祈祷和进行仪式庆祝。" data-ja="太陽神に捧げられる祭りで、日の出と日の入りに川や池の岸で祈りや儀式を行います。">A festival dedicated to the Sun God, celebrated by offering prayers and performing rituals on the banks of rivers or ponds during sunrise and sunset.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Maghe Sankranti -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="Maghesankranti.png" alt="Maghe Sankranti" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Maghe Sankranti" data-es="Maghe Sankranti" data-fr="Maghe Sankranti" data-ne="माघे संक्रान्ति" data-hi="माघ संक्रांति" data-zh="马格圣克朗提" data-ja="マグ・サンクランティ">Maghe Sankranti</strong>
+                                    <p class="translatable" data-en="Celebrated on the first day of the Nepali month Magh, this festival marks the winter solstice and includes feasts with sesame sweets, yams, and ghee." data-es="Celebrado en el primer día del mes nepalí Magh, este festival marca el solsticio de invierno e incluye banquetes con dulces de sésamo, ñames y mantequilla clarificada." data-fr="Célébrée le premier jour du mois népalais de Magh, cette fête marque le solstice d'hiver et comprend des festins avec des douceurs au sésame, des ignames et du beurre clarifié." data-ne="माघ महिनाको पहिलो दिन मनाइने यो पर्वले जाडोको अन्त्यको प्रतीक गर्दछ। यसमा तिलका परिकार, तरुल र घिउ खाएर चाड मनाइन्छ।" data-hi="यह त्योहार नेपाली महीने माघ के पहले दिन मनाया जाता है, जो सर्दी के अंत का प्रतीक है। इसे तिल के लड्डू, तरुल और घी के साथ मनाया जाता है।" data-zh="在尼泊尔历马格月的第一天庆祝，这个节日标志着冬至，并包括芝麻甜点、山药和酥油的盛宴。" data-ja="ネパール暦のマグ月の初日に祝われ、この祭りは冬至を象徴し、ゴマのスイーツ、ヤムイモ、ギーを使った料理が楽しめます。">Celebrated on the first day of the Nepali month Magh, this festival marks the winter solstice and includes feasts with sesame sweets, yams, and ghee.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Holi -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="Holi.png" alt="Holi" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Holi" data-es="Holi" data-fr="Holi" data-ne="होली" data-hi="होली" data-zh="胡里节" data-ja="ホーリー">Holi</strong>
+                                    <p class="translatable" data-en="Known as the festival of colors, it is celebrated with water and colored powders to mark the arrival of spring and the victory of good over evil." data-es="Conocido como el festival de los colores, se celebra con agua y polvos de colores para marcar la llegada de la primavera y la victoria del bien sobre el mal." data-fr="Connu comme le festival des couleurs, il est célébré avec de l'eau et des poudres colorées pour marquer l'arrivée du printemps et la victoire du bien sur le mal." data-ne="रङहरूको पर्वका रूपमा चिनिने यो पर्व वसन्तको आगमन र असलको बुरालाई जित्ने प्रतीकका रूपमा मनाइन्छ।" data-hi="रंगों के त्योहार के रूप में जाना जाने वाला यह त्योहार वसंत के आगमन और अच्छाई की बुराई पर जीत के प्रतीक के रूप में मनाया जाता है।" data-zh="被称为色彩节，用水和五彩粉末庆祝春天的到来和善战胜恶。" data-ja="色の祭りとして知られ、水や色粉で春の到来と善が悪に勝つことを祝います。">Known as the festival of colors, it is celebrated with water and colored powders to mark the arrival of spring and the victory of good over evil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+    
+    
+            <h3 class="translatable" data-en="Traditional Foods of Chitwan" data-es="Comidas tradicionales de Chitwan" data-fr="Aliments traditionnels de Chitwan" data-ne="चितवनका पारंपरिक खाना" data-hi="चितवन के पारंपरिक भोजन" data-zh="奇旺的传统食物" data-ja="チトワンの伝統的な料理">
+                Traditional Foods of Chitwan
+            </h3>
+            
+            <ul>
+                <div class="container my-5">
+                    <div class="row g-4">
+                        <!-- Dhido and Gundruk -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="Dhido.png" alt="Dhido and Gundruk" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Dhido and Gundruk" data-es="Dhido y Gundruk" data-fr="Dhido et Gundruk" data-ne="ढिडो र गुन्द्रुक" data-hi="ढिडो और गुन्द्रुक" data-zh="Dhido和Gundruk" data-ja="ディドとグンドゥルク">
+                                        Dhido and Gundruk
+                                    </strong>
+                                    <p class="translatable" data-en="Dhido is a staple dish in Chitwan, made from millet or corn flour, paired with Gundruk, a fermented leafy green vegetable." data-es="Dhido es un plato básico en Chitwan, hecho de harina de mijo o maíz, acompañado de Gundruk, un vegetal de hoja fermentado." data-fr="Le Dhido est un plat de base à Chitwan, fait de farine de millet ou de maïs, accompagné de Gundruk, un légume vert fermenté." data-ne="चितवनमा ढिडो आधारभूत परिकार हो, जुन कोदो वा मकैको पीठोबाट बनाइन्छ र गुन्द्रुक (फर्मेन्ट गरिएको हरियो सागसब्जी)सँग खाइन्छ।" data-hi="चितवन में ढिडो एक मुख्य भोजन है, जो बाजरा या मक्का के आटे से बना होता है और गुन्द्रुक (किण्वित हरी पत्तेदार सब्जी) के साथ खाया जाता है।" data-zh="Dhido是奇旺的主食，由小米或玉米面制成，与发酵的叶菜Gundruk一起食用。" data-ja="ディドはチトワンの主食で、ミレットまたはコーンフラワーから作られ、発酵した葉野菜であるグンドゥルクと一緒に食べられます。">
+                                        Dhido is a staple dish in Chitwan, made from millet or corn flour, paired with Gundruk, a fermented leafy green vegetable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Fish Curry -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="fishcurry.png" alt="Fish Curry" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Fish Curry" data-es="Curry de pescado" data-fr="Curry de poisson" data-ne="माछाको करी" data-hi="मछली करी" data-zh="鱼咖喱" data-ja="フィッシュカレー">
+                                        Fish Curry
+                                    </strong>
+                                    <p class="translatable" data-en="Chitwan is famous for its freshwater fish dishes. Fish curry, made with local spices, is a must-try delicacy." data-es="Chitwan es famoso por sus platos de pescado de agua dulce. El curry de pescado, elaborado con especias locales, es una delicia imprescindible." data-fr="Chitwan est célèbre pour ses plats de poisson d'eau douce. Le curry de poisson, préparé avec des épices locales, est un mets incontournable." data-ne="चितवन ताजा पानीको माछाका परिकारहरूको लागि प्रसिद्ध छ। स्थानीय मसालाबाट बनाइएको माछाको करी अवश्य नै प्रयास गर्नुपर्ने परिकार हो।" data-hi="चितवन अपने ताजे पानी की मछली व्यंजनों के लिए प्रसिद्ध है। स्थानीय मसालों से बनी मछली करी एक अवश्य आजमाई जाने वाली डिश है।" data-zh="奇旺以其淡水鱼菜肴而闻名。用当地香料制成的鱼咖喱是必尝的美食。" data-ja="チトワンは淡水魚の料理で有名です。地元のスパイスを使ったフィッシュカレーはぜひ試してみたい一品です。">
+                                        Chitwan is famous for its freshwater fish dishes. Fish curry, made with local spices, is a must-try delicacy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Tharu Cuisine -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="tharucuisine.png" alt="Tharu Cuisine" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Tharu Cuisine" data-es="Cocina Tharu" data-fr="Cuisine Tharu" data-ne="थारू परिकार" data-hi="थारू व्यंजन" data-zh="塔鲁美食" data-ja="タル料理">
+                                        Tharu Cuisine
+                                    </strong>
+                                    <p class="translatable" data-en="Tharu people have a unique culinary tradition, including dishes like roasted fish, rice wine, and vegetable curries." data-es="Los tharu tienen una tradición culinaria única, que incluye platos como pescado asado, vino de arroz y curries de verduras." data-fr="Les Tharu ont une tradition culinaire unique, avec des plats comme le poisson rôti, le vin de riz et les currys de légumes." data-ne="थारूहरूको अनौठो पाक परंपरा छ, जसमा भुजाएको माछा, चामलको मदिरा, र तरकारीका करीहरू समावेश छन्।" data-hi="थारू लोगों की अनोखी पाक परंपरा है, जिसमें भुनी हुई मछली, चावल की शराब और सब्ज़ी की करी शामिल हैं।" data-zh="塔鲁人有着独特的烹饪传统，包括烤鱼、米酒和蔬菜咖喱等菜肴。" data-ja="タルの人々には、焼き魚、米酒、野菜カレーなどを含むユニークな料理の伝統があります。">
+                                        Tharu people have a unique culinary tradition, including dishes like roasted fish, rice wine, and vegetable curries.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            
+            <h3 class="translatable" data-en="Cultural Sites in Chitwan" data-es="Sitios culturales en Chitwan" data-fr="Sites culturels à Chitwan" data-ne="चितवनका सांस्कृतिक स्थलहरू" data-hi="चितवन में सांस्कृतिक स्थल" data-zh="奇特旺的文化景点" data-ja="チトワンの文化的な場所">
+                Cultural Sites in Chitwan
+            </h3>
+            
+            <ul>
+                <div class="container my-5">
+                    <div class="row g-4">
+                        <!-- Chitwan National Park -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="chitwan.jpg" alt="Chitwan National Park" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Chitwan National Park" data-es="Parque Nacional de Chitwan" data-fr="Parc National de Chitwan" data-ne="चितवन राष्ट्रिय निकुञ्ज" data-hi="चितवन राष्ट्रीय उद्यान" data-zh="奇特旺国家公园" data-ja="チトワン国立公園">
+                                        Chitwan National Park
+                                    </strong>
+                                    <p class="translatable" data-en="Chitwan National Park is a UNESCO World Heritage Site known for its diverse wildlife, including Bengal tigers, rhinos, and elephants. Visitors can enjoy jungle safaris and cultural Tharu performances." data-es="El Parque Nacional de Chitwan es un sitio del Patrimonio Mundial de la UNESCO conocido por su diversa vida silvestre, incluidos tigres de Bengala, rinocerontes y elefantes. Los visitantes pueden disfrutar de safaris por la selva y espectáculos culturales Tharu." data-fr="Le Parc National de Chitwan est un site du patrimoine mondial de l'UNESCO connu pour sa faune diversifiée, y compris les tigres du Bengale, les rhinocéros et les éléphants. Les visiteurs peuvent profiter de safaris dans la jungle et de spectacles culturels Tharu." data-ne="चितवन राष्ट्रिय निकुञ्ज युनेस्कोको विश्व सम्पदा स्थल हो, जसले बाघ, गैंडा, र हात्ती जस्ता विविध वन्यजन्तुका लागि प्रसिद्ध छ। आगन्तुकहरूले जङ्गल सफारी र थारु सांस्कृतिक प्रदर्शनहरूको आनन्द लिन सक्छन्।" data-hi="चितवन राष्ट्रीय उद्यान यूनेस्को विश्व धरोहर स्थल है, जो बंगाल टाइगर, गैंडे और हाथियों जैसे विविध वन्यजीवों के लिए जाना जाता है। आगंतुक जंगल सफारी और थारू सांस्कृतिक प्रदर्शन का आनंद ले सकते हैं।" data-zh="奇特旺国家公园是联合国教科文组织世界遗产地，以其包括孟加拉虎、犀牛和大象在内的多样化野生动物而闻名。游客可以享受丛林游猎和塔鲁文化表演。" data-ja="チトワン国立公園は、ベンガルタイガー、サイ、ゾウなどの多様な野生生物で知られるユネスコの世界遺産です。訪問者はジャングルサファリやタル文化のパフォーマンスを楽しむことができます。">
+                                        Chitwan National Park is a UNESCO World Heritage Site known for its diverse wildlife, including Bengal tigers, rhinos, and elephants. Visitors can enjoy jungle safaris and cultural Tharu performances.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Tharu Cultural Museum -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="tharumuseum.png" alt="Tharu Cultural Museum" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Tharu Cultural Museum" data-es="Museo Cultural Tharu" data-fr="Musée Culturel Tharu" data-ne="थारु सांस्कृतिक संग्रहालय" data-hi="थारू सांस्कृतिक संग्रहालय" data-zh="塔鲁文化博物馆" data-ja="タル文化博物館">
+                                        Tharu Cultural Museum
+                                    </strong>
+                                    <p class="translatable" data-en="The Tharu Cultural Museum showcases the rich heritage of the Tharu people, featuring artifacts, traditional tools, and exhibits highlighting their lifestyle and history." data-es="El Museo Cultural Tharu muestra la rica herencia del pueblo Tharu, con artefactos, herramientas tradicionales y exhibiciones que destacan su estilo de vida e historia." data-fr="Le Musée Culturel Tharu met en valeur le riche patrimoine du peuple Tharu, avec des artefacts, des outils traditionnels et des expositions sur leur mode de vie et leur histoire." data-ne="थारु सांस्कृतिक संग्रहालय थारु जातिको समृद्ध सम्पदालाई प्रस्तुत गर्दछ, जसमा उनीहरूको जीवनशैली र इतिहास झल्काउने वस्तुहरू र परम्परागत उपकरणहरू सामेल छन्।" data-hi="थारू सांस्कृतिक संग्रहालय थारू लोगों की समृद्ध विरासत को प्रदर्शित करता है, जिसमें उनके जीवन शैली और इतिहास को उजागर करने वाले कलाकृतियां और पारंपरिक उपकरण शामिल हैं।" data-zh="塔鲁文化博物馆展示了塔鲁人民的丰富遗产，包括文物、传统工具和反映其生活方式和历史的展品。" data-ja="タル文化博物館では、タル族の豊かな遺産が展示されており、彼らのライフスタイルと歴史を反映した工芸品や伝統的な道具が紹介されています。">
+                                        The Tharu Cultural Museum showcases the rich heritage of the Tharu people, featuring artifacts, traditional tools, and exhibits highlighting their lifestyle and history.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Bish Hazari Taal -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 text-center">
+                                <img src="bish_hazari.png" alt="Bish Hazari Taal" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <strong class="translatable d-block mb-2" data-en="Bish Hazari Taal" data-es="Lago Bish Hazari" data-fr="Lac Bish Hazari" data-ne="बीस हजार ताल" data-hi="बीस हजार ताल" data-zh="比什哈扎里湖" data-ja="ビシュハザリ湖">
+                                        Bish Hazari Taal
+                                    </strong>
+                                    <p class="translatable" data-en="Bish Hazari Taal, a beautiful wetland near Chitwan National Park, is home to diverse bird species and offers serene views. It is a popular spot for bird watching and nature walks." data-es="Bish Hazari Taal, un hermoso humedal cerca del Parque Nacional de Chitwan, alberga diversas especies de aves y ofrece vistas serenas. Es un lugar popular para la observación de aves y caminatas por la naturaleza." data-fr="Bish Hazari Taal, une belle zone humide près du Parc National de Chitwan, abrite diverses espèces d'oiseaux et offre une vue sereine. C'est un endroit populaire pour l'observation des oiseaux et les promenades en pleine nature." data-ne="बीस हजार ताल, चितवन राष्ट्रिय निकुञ्ज नजिकैको सुन्दर आर्द्रभूमि हो, जसले विभिन्न चराहरूको प्रजातिहरूलाई आश्रय दिन्छ र शान्त दृश्य प्रस्तुत गर्दछ। यो चराहरू हेर्ने र प्रकृतिमा हिंड्नको लागि लोकप्रिय स्थल हो।" data-hi="बीस हजार ताल, चितवन राष्ट्रीय उद्यान के पास एक सुंदर आर्द्रभूमि है, जो विभिन्न पक्षी प्रजातियों का घर है और शांतिपूर्ण दृश्य प्रस्तुत करता है। यह पक्षी देखने और प्रकृति की सैर के लिए एक लोकप्रिय स्थान है।" data-zh="比什哈扎里湖是奇特旺国家公园附近的一个美丽湿地，是各种鸟类的家园，提供宁静的景色。它是观鸟和自然漫步的热门地点。" data-ja="ビシュハザリ湖はチトワン国立公園の近くにある美しい湿地で、多様な鳥類の生息地として知られ、静かな景観を提供しています。バードウォッチングや自然散策に人気のスポットです。">
+                                        Bish Hazari Taal, a beautiful wetland near Chitwan National Park, is home to diverse bird species and offers serene views. It is a popular spot for bird watching and nature walks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+
+            <h3 class="translatable" data-en="Local Foods in Chitwan and Their Locations" data-es="Comidas locales en Chitwan y sus ubicaciones" data-fr="Plats locaux à Chitwan et leurs emplacements" 
+                data-ne="चितवनका स्थानीय परिकारहरू र तिनीहरूको स्थान" data-hi="चितवन में स्थानीय भोजन और उनके स्थान" data-zh="奇特旺的地方美食及其位置" data-ja="チトワンの郷土料理とその場所">
+                Local Foods in Chitwan and Their Locations
+            </h3>
+
+            <!-- Start Local Foods and Locations -->
+            <div class="local-foods-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="heading-title text-center">
+                                <h2>Local Foods in Chitwan</h2>
+                                <p>Discover the authentic tastes of Chitwan and where to find them.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                <div class="col-md-8 mr-auto ml-auto text-center">
+                    <div id="localFoods" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner mt-4">
+                            <!-- Food Item 1 -->
+                            <div class="carousel-item text-center active">
+                                <div class="img-box p-1 border rounded-circle m-auto" style="max-width: 300px; max-height: 300px;">
+                                    <img class="d-block w-100 rounded-circle" src="Ghogi.jpg" alt="Ghongi">
+                                </div>
+                                <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ghongi</strong></h5>
+                                <h6 class="text-dark m-0">Location: Bachhauli, Ward No. 6, Ratnanagar Municipality, Chitwan District, Bagmati Province, Nepal</h6>
+                                <p class="m-0 pt-3">
+                                    Ghongi (water snails) is a traditional delicacy of the Tharu community in Chitwan and is mostly found in areas where the Tharu culture is prominent. The best places to find authentic Ghongi in Chitwan are:
+                                    <br>
+                                    <strong>Tharu Villages:</strong> Villages like Bachhauli, Meghauli, and other Tharu settlements near Sauraha are known for preparing traditional Ghongi dishes.
+                                </p>
+                            </div>
+        
+                            <!-- Food Item 2 -->
+                            <div class="carousel-item text-center">
+                                <div class="img-box p-1 border rounded-circle m-auto" style="max-width: 300px; max-height: 300px;">
+                                    <img class="d-block w-100 rounded-circle" src="taas.jpg" alt="Taas">
+                                </div>
+                                <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Taas</strong></h5>
+                                <h6 class="text-dark m-0">Location: Narayanghat, Bharatpur Metropolitan City, Chitwan District, Bagmati Province, Nepal</h6>
+                                <p class="m-0 pt-3">
+                                    Taas is a popular spicy grilled meat dish, originating from Chitwan, and is often served with puffed rice or beaten rice. Known for its unique preparation style, Taas is a favorite street food that reflects the region's culinary charm. 
+                                    <br>
+                                    <strong>Best Places to Try Taas:</strong> Narayanghat, Aaptari, and various eateries in Bharatpur Metropolitan City are famous for authentic Taas.
+                                </p>
+                            </div>
+                            
+                            <!-- Food Item 3 -->
+                            <div class="carousel-item text-center">
+                                <div class="img-box p-1 border rounded-circle m-auto" style="max-width: 300px; max-height: 300px;">
+                                    <img class="d-block w-100 rounded-circle" src="dhedo.jpg" alt="Dhedo Gundruk">
+                                </div>
+                                <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Dhedo Gundruk</strong></h5>
+                                <h6 class="text-dark m-0">Location: Chitwan District, Bagmati Province, Nepal</h6>
+                                <p class="m-0 pt-3">
+                                    Dhedo Gundruk is a traditional dish made of fermented leafy greens (gundruk) and served with dhedo (a type of thick porridge made from buckwheat or millet flour). It is commonly eaten in rural Chitwan and other parts of Nepal as a wholesome, nutritious meal.
+                                    <br>
+                                    <strong>Best Places to Try Dhedo Gundruk:</strong> Local eateries and homestays in areas such as Sauraha, Meghauli, and Bachhauli in Chitwan are known for serving authentic Dhedo Gundruk.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#localFoods" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#localFoods" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Local Foods and Locations -->
+    </div>
+
+    <footer class="custom-footer-bg text-white text-center py-3">
+        <p class="translatable" data-en="© 2025 Explore Nepal. All rights reserved." data-es="© 2025 Explora Nepal. Todos los derechos reservados." data-fr="© 2025 Explorez le Népal. Tous droits réservés." data-ne="© 2025 नेपाल अन्वेषण। सबै अधिकार सुरक्षित।" data-hi="© 2025 Explore Nepal. सर्वाधिकार सुरक्षित।" data-zh="© 2025 探索尼泊尔。版权所有。" data-ja="© 2025 ネパール探険。すべての権利を保有。">
+            © 2025 Explore Nepal. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>

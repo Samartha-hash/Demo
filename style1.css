@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f9, #e0d0b1); /* Soft gradient background */
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Search Box Styling */
+.search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.search-box input {
+    width: 90%;
+    max-width: 350px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #d0a772; /* Highlight input border with the primary color */
+}
+
+.search-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #d0a772; /* Primary color for the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-box button:hover {
+    background-color: #b88a5b; /* Darker shade for hover effect */
+    transform: scale(1.05);
+}
+
+/* Result Section Styling */
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Styling for displaying images inline */
+.result-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.result-images img {
+    width: 30%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 200px;
+    border: 3px solid #d0a772; /* Border around images to match the color scheme */
+}
+
+/* Paragraph and Text Styling */
+.result p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.result strong {
+    color: #d0a772; /* Highlight important text with the primary color */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-box button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .result p {
+        font-size: 14px;
+    }
+
+    /* Stack images vertically on smaller screens */
+    .result-images {
+        flex-direction: column;
+    }
+
+    .result-images img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

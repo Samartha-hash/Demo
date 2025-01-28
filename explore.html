@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Nepal - Major Cities</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cities.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .carousel .carousel-item img {
+            width: 100%;
+        }
+    </style>
+    <script>
+        // Function to change the language
+        function changeLanguage(language) {
+            const content = document.querySelectorAll('.translatable');
+            content.forEach(item => {
+                const translation = item.getAttribute('data-' + language);
+                if (translation) {
+                    item.textContent = translation;
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <h1 class="text-center translatable" data-en="Explore Nepal - Major Cities" 
+                data-es="Explora Nepal - Ciudades Principales" data-fr="Explorer le Népal - Villes principales"
+                data-ne="नेपाल अन्वेषण - प्रमुख शहरहरू" data-hi="नेपाल अन्वेषण - प्रमुख शहर" 
+                data-zh="探索尼泊尔 - 主要城市" data-ja="ネパール探索 - 主要都市">
+                Explore Nepal - Major Cities
+            </h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Explore Nepal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kathmandu.html">Kathmandu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="chitwan.html">Chitwan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dharan.html">Dharan</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Language selector -->
+            <div class="dropdown text-center mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Language
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('fr')">Français</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('ne')">नेपाली</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('hi')">हिन्दी</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('zh')">中文</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('ja')">日本語</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center translatable" data-en="Discover Nepal's Major Cities" data-es="Descubre las principales ciudades de Nepal" 
+            data-fr="Découvrez les principales villes du Népal" data-ne="नेपालका प्रमुख शहरहरू अन्वेषण गर्नुहोस्"
+            data-hi="नेपाल के प्रमुख शहरों की खोज करें" data-zh="探索尼泊尔的主要城市" data-ja="ネパールの主要都市を発見する">
+            Discover Nepal's Major Cities
+        </h2>
+        <p class="text-center translatable" data-en="Nepal is a land of diverse cultures, landscapes, and historical monuments. Explore the unique cities that showcase the rich heritage and natural beauty of this amazing country." 
+            data-es="Nepal es una tierra de diversas culturas, paisajes y monumentos históricos. Explora las ciudades únicas que muestran la rica herencia y belleza natural de este increíble país." 
+            data-fr="Le Népal est un pays de cultures, paysages et monuments historiques divers. Explorez les villes uniques qui mettent en valeur le riche patrimoine et la beauté naturelle de ce pays incroyable." 
+            data-ne="नेपाल विभिन्न सांस्कृतिक, भौगोलिक र ऐतिहासिक स्मारकहरूको भूमि हो। यस अद्भुत देशको समृद्ध धरोहर र प्राकृतिक सौन्दर्य देखाउने अनूठा शहरहरूको अन्वेषण गर्नुहोस्।"
+            data-hi="नेपाल एक ऐसा देश है जो विविध संस्कृतियों, परिदृश्यों और ऐतिहासिक स्मारकों से भरपूर है। इस अद्भुत देश के समृद्ध धरोहर और प्राकृतिक सुंदरता को प्रदर्शित करने वाले अनूठे शहरों का अन्वेषण करें।"
+            data-zh="尼泊尔是一个拥有丰富文化、景观和历史遗迹的土地。探索展示这个惊人国家丰富遗产和自然美景的独特城市。"
+            data-ja="ネパールは、多様な文化、風景、歴史的な記念碑がある土地です。この素晴らしい国の豊かな遺産と自然の美しさを紹介するユニークな都市を探索してください。">
+            Nepal is a land of diverse cultures, landscapes, and historical monuments. Explore the unique cities that showcase the rich heritage and natural beauty of this amazing country.
+        </p>
+
+        <!-- City Divs -->
+        <div class="row my-5">
+            <!-- Kathmandu -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="kathmandu.jpg" class="card-img-top" alt="Kathmandu">
+                    <div class="card-body">
+                        <h5 class="card-title translatable" data-en="Kathmandu" data-es="Katmandú" data-fr="Kathmandu" data-ne="काठमाडौँ" data-hi="काठमांडू" data-zh="加德满都" data-ja="カトマンズ">
+                            Kathmandu
+                        </h5>
+                        <p class="card-text translatable" data-en="Explore the capital of Nepal, a vibrant city full of history, culture, and religious significance." data-es="Explora la capital de Nepal, una ciudad vibrante llena de historia, cultura y significados religiosos." data-fr="Explorez la capitale du Népal, une ville dynamique pleine d'histoire, de culture et de signification religieuse." data-ne="नेपालको राजधानी, ऐतिहासिक, सांस्कृतिक र धार्मिक महत्त्वले भरिएको जीवन्त शहर अन्वेषण गर्नुहोस्।" data-hi="नेपाल की राजधानी, एक जीवंत शहर जो इतिहास, संस्कृति और धार्मिक महत्व से भरपूर है।" data-zh="探索尼泊尔的首都，一个充满历史、文化和宗教意义的充满活力的城市。" data-ja="ネパールの首都、歴史、文化、宗教的意義に満ちた活気ある都市を探索してください。">
+                            Explore the capital of Nepal, a vibrant city full of history, culture, and religious significance.
+                        </p>
+                        <a href="kathmandu.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chitwan -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="chitwan.jpg" class="card-img-top" alt="Chitwan">
+                    <div class="card-body">
+                        <h5 class="card-title translatable" data-en="Chitwan" data-es="Chitwan" data-fr="Chitwan" data-ne="चितवन" data-hi="चितवन" data-zh="奇特旺" data-ja="チトワン">
+                            Chitwan
+                        </h5>
+                        <p class="card-text translatable" data-en="Chitwan is famous for its national park and wildlife, including the endangered one-horned rhinoceros." data-es="Chitwan es famoso por su parque nacional y vida silvestre, incluidos el rinoceronte de un solo cuerno en peligro de extinción." data-fr="Chitwan est célèbre pour son parc national et sa faune, y compris le rhinocéros à une corne en danger." data-ne="चितवन यसको राष्ट्रिय निकुञ्ज र वन्यजन्तुहरूको लागि प्रसिद्ध छ, जसमा संकटग्रस्त एक सींग भएको गैंडा पनि समावेश छ।" data-hi="चितवन अपने राष्ट्रीय पार्क और वन्य जीवन के लिए प्रसिद्ध है, जिसमें संकटग्रस्त एक सींग वाले गैंडे भी शामिल हैं।" data-zh="奇特旺以其国家公园和野生动物而闻名，包括濒危的独角犀牛。" data-ja="チトワンはその国立公園と野生動物で有名で、絶滅危惧種の一角犀も含まれています。">
+                            Chitwan is famous for its national park and wildlife, including the endangered one-horned rhinoceros.
+                        </p>
+                        <a href="chitwan.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Patan -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="dharan.jpg" class="card-img-top" alt="Dharan">
+                    <div class="card-body">
+
+                        <h5 class="card-title translatable" data-en="Dharan" data-es="Dharan" data-fr="Dharan" data-ne="धरान" data-hi="धरान" data-zh="达兰" data-ja="ダラン">
+                            Dharan
+                        </h5>
+                        <p class="card-text translatable" data-en="Dharan is a vibrant city in eastern Nepal, known for its diverse community and beautiful scenery." data-es="Dharan es una ciudad vibrante en el este de Nepal, conocida por su comunidad diversa y hermosos paisajes." data-fr="Dharan est une ville dynamique de l'est du Népal, connue pour sa communauté diversifiée et ses beaux paysages." data-ne="धरान पूर्वी नेपालमा अवस्थित एक जीवन्त शहर हो, जुन यसको बहुसांस्कृतिक समुदाय, सुन्दर परिदृश्यको लागि प्रख्यात छ।" data-hi="धरान पूर्वी नेपाल का एक जीवंत शहर है, जो अपने बहुसांस्कृतिक समुदाय और सुंदर परिदृश्य के लिए जाना जाता है।" data-zh="达兰是尼泊尔东部的一座充满活力的城市，以其多元文化社区和美丽风景而闻名。" data-ja="ダランはネパール東部の活気に満ちた都市で、多文化コミュニティと美しい景観で知られています。">
+                            Dharan is a vibrant city in eastern Nepal, known for its diverse community and beautiful scenery.
+                        </p>
+                        
+                        
+                        <a href="dharan.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="custom-footer-bg text-white text-center py-3">
+        <p class="translatable" data-en="© 2025 Explore Nepal. All rights reserved." data-es="© 2025 Explora Nepal. Todos los derechos reservados." data-fr="© 2025 Explorez le Népal. Tous droits réservés." data-ne="© 2025 नेपाल अन्वेषण। सबै अधिकार सुरक्षित।" data-hi="© 2025 Explore Nepal. सर्वाधिकार सुरक्षित।" data-zh="© 2025 探索尼泊尔。版权所有。" data-ja="© 2025 ネパール探険。すべての権利を保有。">
+            © 2025 Explore Nepal. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
+

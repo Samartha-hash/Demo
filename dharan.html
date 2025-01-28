@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Dharan - Explore Nepal" data-es="Dharan - Explorar Nepal" data-fr="Dharan - Explorer le Népal" data-ne="धरान - नेपाल अन्वेषण गर्नुहोस्" data-hi="धरान - नेपाल एक्सप्लोर करें" data-zh="达兰 - 探索尼泊尔" data-ja="ダラン - ネパールを探検する">
+        Dharan - Explore Nepal
+    </title>
+    
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cities.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Function to switch languages
+        function changeLanguage(language) {
+            // Find all elements with the 'translatable' class
+            document.querySelectorAll('.translatable').forEach(function (element) {
+                // Check if the element has a data attribute for the selected language
+                const translatedText = element.getAttribute('data-' + language);
+                if (translatedText) {
+                    element.innerHTML = translatedText; // Change the element's text to the translated text
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <h1 class="text-center translatable" data-en="Dharan - The City of Diversity" data-es="Dharan - La Ciudad de la Diversidad" data-fr="Dharan - La Ville de la Diversité" data-ne="धरान - विविधताको शहर" data-hi="धरान - विविधता का शहर" data-zh="达兰 - 多样性的城市" data-ja="ダラン - 多様性の街">
+                Dharan - The City of Diversity
+            </h1>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Explore Nepal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link translatable" href="index.php" data-en="Home" data-es="Inicio" data-fr="Accueil" data-ne="गृहपृष्ठ" data-hi="होम" data-zh="首页" data-ja="ホーム">Home</a></li>
+                        <li class="nav-item"><a class="nav-link translatable" href="kathmandu.html" data-en="Kathmandu" data-es="Katmandú" data-fr="Katmandou" data-ne="काठमाण्डौ" data-hi="काठमांडू" data-zh="加德满都" data-ja="カトマンズ">Kathmandu</a></li>
+                        <li class="nav-item"><a class="nav-link translatable" href="chitwan.html" data-en="Chitwan" data-es="Chitwan" data-fr="Chitwan" data-ne="चितवन" data-hi="चितवन" data-zh="奇特旺" data-ja="チトワン">Chitwan</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Language Selector Dropdown -->
+            <select class="form-control w-auto ml-auto" style="max-width: 200px;" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ne">नेपाली</option>
+                <option value="hi">हिन्दी</option>
+                <option value="zh">中文</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center translatable" data-en="Dharan - The Gateway to Eastern Nepal" data-es="Dharan - La Puerta de Entrada al Este de Nepal" data-fr="Dharan - La Porte de l'Est du Népal" data-ne="धरान - पूर्वी नेपालको प्रवेशद्वार" data-hi="धरान - पूर्वी नेपाल का प्रवेशद्वार" data-zh="达兰 - 尼泊尔东部的门户" data-ja="ダラン - 東ネパールへの玄関">
+            Dharan - The Gateway to Eastern Nepal
+        </h2>
+        
+        <p class="text-center translatable" data-en="Dharan is a vibrant city in eastern Nepal, famous for its diverse community, scenic beauty, and bustling market areas." data-es="Dharan es una ciudad vibrante en el este de Nepal, famosa por su comunidad diversa, su belleza escénica y sus bulliciosas áreas de mercado." 
+            data-fr="Dharan est une ville dynamique de l'est du Népal, célèbre pour sa communauté diversifiée, sa beauté scénique et ses zones de marché animées." data-ne="धरान पूर्वी नेपालको एक जीवन्त शहर हो, जुन यसको विविध समुदाय, सुन्दर दृश्यहरु र ब्यस्त बजार क्षेत्रहरुको लागि प्रसिद्ध छ।" data-hi="धरान पूर्वी नेपाल का एक जीवंत शहर है, जो अपने विविध समुदाय, सुंदर दृश्य और व्यस्त बाजार क्षेत्रों के लिए प्रसिद्ध है।" 
+            data-zh="达兰是尼泊尔东部的一座充满活力的城市，以其多元化的社区、优美的风景和繁忙的市场区而闻名。" data-ja="ダランはネパール東部の活気に満ちた都市で、多様なコミュニティ、美しい景観、そして賑やかな市場エリアで有名です。">
+            Dharan is a vibrant city in eastern Nepal, famous for its diverse community, scenic beauty, and bustling market areas.
+        </p>
+        <h3 class="translatable" data-en="Major Castes in Dharan" data-es="Principales Castas en Dharan" data-fr="Principales Castes à Dharan" data-ne="धरानका प्रमुख जातीहरू" data-hi="धरान के प्रमुख जाती" data-zh="达兰的主要种姓" data-ja="ダランの主要なカースト">
+            Major Castes in Dharan
+        </h3>
+        <ul>
+            <div class="container my-5">
+                <div class="row g-4">
+                    <!-- Rai -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="rai.jpg" alt="Rai" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Rai" data-es="Rai" data-fr="Rai" data-ne="राई" data-hi="राई" data-zh="赖" data-ja="ライ">Rai</strong>
+                                <p class="translatable" data-en="Rai people are an indigenous ethnic group from eastern Nepal, known for their bravery and service in the military. They have a rich cultural heritage and celebrate various traditional festivals." data-es="Los Rai son un grupo étnico indígena del este de Nepal, conocidos por su valentía y servicio en el ejército. Tienen una rica herencia cultural y celebran diversos festivales tradicionales." data-fr="Les Rai sont un groupe ethnique indigène de l'est du Népal, connus pour leur bravoure et leur service militaire. Ils ont un riche patrimoine culturel et célèbrent divers festivals traditionnels." data-ne="राई पूर्वी नेपालको एक आदिवासी जातीय समूह हुन्, जसले आफ्नो बहादुरी र सैनिक सेवाका लागि परिचित छन्। उनीहरूको समृद्ध सांस्कृतिक धरोहर छ र विभिन्न परम्परागत चाडपर्वहरू मनाउँछन्।" data-hi="राई पूर्वी नेपाल का एक आदिवासी जातीय समूह हैं, जो अपनी बहादुरी और सैन्य सेवा के लिए जाने जाते हैं। उनकी समृद्ध सांस्कृतिक धरोहर है और वे विभिन्न पारंपरिक त्योहार मनाते हैं।" data-zh="赖是尼泊尔东部的一个土著民族，以其勇敢和在军队中的服务而闻名。他们拥有丰富的文化遗产，庆祝各种传统节日。" data-ja="ライはネパール東部の先住民族であり、その勇気と軍隊での奉仕で知られています。彼らは豊かな文化遺産を持ち、様々な伝統的な祭りを祝います。">Rai people are an indigenous ethnic group from eastern Nepal, known for their bravery and service in the military. They have a rich cultural heritage and celebrate various traditional festivals.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Limbu -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="limbu.jpg" alt="Limbu" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Limbu" data-es="Limbu" data-fr="Limbu" data-ne="लिम्बू" data-hi="लिम्बू" data-zh="林布" data-ja="リムブ">Limbu</strong>
+                                <p class="translatable" data-en="Limbu people are another prominent ethnic group in eastern Nepal. They are known for their rich culture, traditional attire, and vibrant festivals like Udhauli and Ubhauli." data-es="Los Limbu son otro grupo étnico prominente en el este de Nepal. Son conocidos por su rica cultura, vestimenta tradicional y festivales vibrantes como Udhauli y Ubhauli." data-fr="Les Limbu sont un autre groupe ethnique important de l'est du Népal. Ils sont connus pour leur riche culture, leurs vêtements traditionnels et leurs festivals vibrants comme Udhauli et Ubhauli." data-ne="लिम्बू पूर्वी नेपालको अर्को प्रमुख जातीय समूह हो। उनीहरूको समृद्ध संस्कृति, परम्परागत पहिरन, र ऊधाउली र उभाउली जस्ता रंगीन चाडपर्वका लागि परिचित छन्।" data-hi="लिम्बू पूर्वी नेपाल का एक और प्रमुख जातीय समूह हैं। वे अपनी समृद्ध संस्कृति, पारंपरिक पोशाक और उद्हौली और उभौली जैसे जीवंत त्योहारों के लिए जाने जाते हैं।" data-zh="林布是尼泊尔东部的另一个重要民族。他们以其丰富的文化、传统服饰和如乌达乌里和乌巴乌里等充满活力的节日而闻名。" data-ja="リムブはネパール東部のもう一つの主要な民族グループです。彼らはその豊かな文化、伝統的な衣装、そしてウダウリやウバウリのような活気のある祭りで知られています。">Limbu people are another prominent ethnic group in eastern Nepal. They are known for their rich culture, traditional attire, and vibrant festivals like Udhauli and Ubhauli.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Tamang -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="tamang.jpeg" alt="Tamang" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Tamang" data-es="Tamang" data-fr="Tamang" data-ne="तामाङ" data-hi="तामांग" data-zh="塔芒" data-ja="タマング">Tamang</strong>
+                                <p class="translatable" data-en="Tamang people are an important ethnic group in eastern Nepal, known for their unique language, culture, and traditional dances. They celebrate festivals like Lhosar with great enthusiasm." data-es="Los Tamang son un grupo étnico importante en el este de Nepal, conocidos por su idioma único, cultura y danzas tradicionales. Celebran festivales como Lhosar con gran entusiasmo." data-fr="Les Tamang sont un groupe ethnique important de l'est du Népal, connus pour leur langue unique, leur culture et leurs danses traditionnelles. Ils célèbrent des festivals comme le Lhosar avec beaucoup d'enthousiasme." data-ne="तामाङ पूर्वी नेपालको एक महत्त्वपूर्ण जातीय समूह हुन्, जसको विशिष्ट भाषा, संस्कृति, र परम्परागत नृत्यका लागि परिचित छन्। उनीहरू ल्होसार जस्ता पर्वहरू ठूलो उत्साहका साथ मनाउँछन्।" data-hi="तामांग पूर्वी नेपाल का एक महत्वपूर्ण जातीय समूह हैं, जो अपनी अनूठी भाषा, संस्कृति और पारंपरिक नृत्यों के लिए जाने जाते हैं। वे ल्होसार जैसे त्योहारों को बड़े उत्साह के साथ मनाते हैं।" data-zh="塔芒是尼泊尔东部的一个重要民族，以其独特的语言、文化和传统舞蹈而闻名。他们以极大的热情庆祝如洛萨尔这样的节日。" data-ja="タマングはネパール東部の重要な民族グループであり、その独特の言語、文化、そして伝統的なダンスで知られています。彼らはロサールのような祭りを大いに楽しんで祝います。">Tamang people are an important ethnic group in eastern Nepal, known for their unique language, culture, and traditional dances. They celebrate festivals like Lhosar with great enthusiasm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+
+        <h3 class="translatable" data-en="Major Festivals in Dharan" data-es="Festivales principales en Dharan" data-fr="Principaux festivals à Dharan" data-ne="धरानका प्रमुख पर्वहरू" data-hi="धरान में प्रमुख त्योहार" data-zh="达兰的主要节日" data-ja="ダランの主要な祭り">
+            Major Festivals in Dharan
+        </h3>
+        <ul>
+            <div class="container my-5">
+                <div class="row g-4">
+                    <!-- Maghe Sankranti -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="magh.jpg" alt="Maghe Sankranti" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Maghe Sankranti" data-es="Maghe Sankranti" data-fr="Maghe Sankranti" data-ne="माघे संक्रान्ति" data-hi="माघे संक्रांति" data-zh="马格桑克兰蒂" data-ja="マゲサンクランティ">Maghe Sankranti</strong>
+                                <p class="translatable" data-en="Celebrated in January, this festival marks the winter solstice. Families gather to enjoy traditional foods like sesame seed sweets and yam." data-es="Celebrado en enero, este festival marca el solsticio de invierno. Las familias se reúnen para disfrutar de comidas tradicionales como los dulces de semillas de sésamo y el ñame." data-fr="Célébré en janvier, ce festival marque le solstice d'hiver. Les familles se réunissent pour déguster des plats traditionnels comme les sucreries aux graines de sésame et l'igname." data-ne="जनवरीमा मनाइने यस पर्वले शीतकालको सुरुवात गर्छ। परिवारहरू परम्परागत खाना जस्तै तिलका मिठाई र तरुल खान जम्मा हुन्छन्।" data-hi="जनवरी में मनाया जाने वाला यह पर्व सर्दियों के अंत का प्रतीक है। परिवार पारंपरिक खाद्य पदार्थ जैसे तिल के मिठाई और अरबी का आनंद लेने के लिए एकत्र होते हैं।" data-zh="每年1月庆祝的节日，这个节日标志着冬至。家庭聚集在一起享受传统食物，如芝麻糖果和山药。" data-ja="1月に祝われるこの祭りは冬至を示します。家族はゴマの種のスイーツやヤムなどの伝統的な料理を楽しむために集まります。">Celebrated in January, this festival marks the winter solstice. Families gather to enjoy traditional foods like sesame seed sweets and yam.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Dantakali Jatra -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="danta.jpg" alt="Dantakali Jatra" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Dantakali Jatra" data-es="Dantakali Jatra" data-fr="Dantakali Jatra" data-ne="दन्तकाली जात्रा" data-hi="दन्तकाली जात्रा" data-zh="丹塔卡里节" data-ja="ダンタカリ・ジャトラ">Dantakali Jatra</strong>
+                                <p class="translatable" data-en="This festival is dedicated to the goddess Dantakali, celebrated with a grand procession and traditional rituals in the Dantakali Temple." data-es="Este festival está dedicado a la diosa Dantakali, celebrado con una gran procesión y rituales tradicionales en el templo de Dantakali." data-fr="Ce festival est dédié à la déesse Dantakali, célébré avec une grande procession et des rituels traditionnels dans le temple de Dantakali." data-ne="यो पर्व देवी दन्तकालीलाई समर्पित छ, जुन दन्तकाली मन्दिरमा भव्य जुलुस र परम्परागत अनुष्ठानहरूसँग मनाइन्छ।" data-hi="यह त्योहार देवी दंतकाली को समर्पित है, जो दंतकाली मंदिर में एक भव्य जुलूस और पारंपरिक अनुष्ठानों के साथ मनाया जाता है।" data-zh="这个节日是为了纪念丹塔卡里女神，在丹塔卡里庙内通过盛大的游行和传统仪式来庆祝。" data-ja="この祭りはダンタカリ女神に捧げられ、ダンタカリ寺院で盛大な行列と伝統的な儀式で祝われます。">This festival is dedicated to the goddess Dantakali, celebrated with a grand procession and traditional rituals in the Dantakali Temple.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Buddha Jayanti -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="buddha.webp" alt="Buddha Jayanti" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Buddha Jayanti" data-es="Buddha Jayanti" data-fr="Buddha Jayanti" data-ne="बुद्ध जयन्ती" data-hi="बुद्ध जयंती" data-zh="佛陀节" data-ja="ブッダ・ジャヤンティ">Buddha Jayanti</strong>
+                                <p class="translatable" data-en="Celebrating the birth, enlightenment, and death of Lord Buddha, this festival is marked by prayers, meditation, and processions in various monasteries and stupas." data-es="Celebrando el nacimiento, la iluminación y la muerte del Señor Buda, este festival se celebra con oraciones, meditación y procesiones en varios monasterios y estupas." data-fr="Célébrant la naissance, l'illumination et la mort du Seigneur Bouddha, ce festival est marqué par des prières, la méditation et des processions dans divers monastères et stupas." data-ne="भगवान बुद्धको जन्म, प्रबोधन र मृत्युको सम्झनामा मनाइने यस पर्वमा प्रार्थना, ध्यान र विभिन्न गुम्बा र स्तुपाहरूमा जुलुस आयोजना गरिन्छ।" data-hi="भगवान बुद्ध के जन्म, ज्ञान और मृत्यु का जश्न मनाते हुए, यह त्योहार प्रार्थनाओं, ध्यान और विभिन्न मठों और स्तूपों में शोभायात्राओं के साथ मनाया जाता है।" data-zh="庆祝佛陀的出生、悟道和逝世，这个节日通过在各个寺庙和佛塔举行祈祷、冥想和游行来庆祝。" data-ja="ブッダの誕生、悟り、そして死を祝うこの祭りは、様々な僧院や仏塔での祈り、瞑想、行列で祝われます。">Celebrating the birth, enlightenment, and death of Lord Buddha, this festival is marked by prayers, meditation, and processions in various monasteries and stupas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        
+        <h3 class="translatable" data-en="Traditional Foods of Traditional Castes" data-es="Comidas tradicionales de castas tradicionales" data-fr="Aliments traditionnels des castes traditionnelles" data-ne="पारंपरिक जातिहरूका पारंपरिक खाना" data-hi="पारंपरिक जातियों के पारंपरिक भोजन" data-zh="传统种姓的传统食物" data-ja="伝統的なカーストの伝統的な料理">
+            Traditional Foods of Traditional Castes
+        </h3>
+        <ul>
+            <div class="container my-5">
+                <div class="row g-4">
+                    <!-- Rai Food -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="wachi.jpg" alt="Rai Food" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Rai Food" data-es="Comida Rai" data-fr="Nourriture Rai" data-ne="राईको खाना" data-hi="राई का खाना" data-zh="赖食物" data-ja="ライの食べ物">
+                                    Rai Food
+                                </strong>
+                                <p class="translatable" data-en="Rai cuisine includes traditional dishes like ‘wachipa’ (rice with chicken and herbs), ‘masikau’ (smoked meat), and various fermented foods and pickles." data-es="La cocina Rai incluye platos tradicionales como ‘wachipa’ (arroz con pollo y hierbas), ‘masikau’ (carne ahumada) y varios alimentos fermentados y encurtidos." data-fr="La cuisine Rai comprend des plats traditionnels comme le ‘wachipa’ (riz avec du poulet et des herbes), le ‘masikau’ (viande fumée) et divers aliments fermentés et marinades." data-ne="राई पाककलामा पारंपरिक परिकारहरू जस्तै ‘वाचिपा’ (चिकन र जडीबुटीसँगको चामल), ‘मासिकाउ’ (सुकुटी) र विभिन्न किण्वित खाना र अचारहरू समावेश छन्।" data-hi="राई व्यंजनों में पारंपरिक व्यंजन जैसे ‘वाचिपा’ (चिकन और जड़ी-बूटियों के साथ चावल), ‘मासिकाउ’ (स्मोक्ड मांस), और विभिन्न किण्वित खाद्य पदार्थ और अचार शामिल हैं।" data-zh="赖人的饮食包括传统菜肴如‘wachipa’（鸡肉和香草的米饭）、‘masikau’（熏肉）以及各种发酵食品和腌菜。" data-ja="ライ料理には「ワチパ」（鶏肉とハーブのご飯）、「マシカウ」（燻製肉）、そして様々な発酵食品やピクルスなどの伝統的な料理が含まれます。">
+                                    Rai cuisine includes traditional dishes like ‘wachipa’ (rice with chicken and herbs), ‘masikau’ (smoked meat), and various fermented foods and pickles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Limbu Food -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="tong.jpg" alt="Limbu Food" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Limbu Food" data-es="Comida Limbu" data-fr="Nourriture Limbu" data-ne="लिम्बूको खाना" data-hi="लिम्बू का खाना" data-zh="林布食物" data-ja="リムブの食べ物">
+                                    Limbu Food
+                                </strong>
+                                <p class="translatable" data-en="Limbu cuisine features dishes like ‘sishnu’ (nettle soup), ‘tongba’ (millet beer), and ‘kinema’ (fermented soybean curry)." data-es="La cocina Limbu presenta platos como ‘sishnu’ (sopa de ortiga), ‘tongba’ (cerveza de mijo) y ‘kinema’ (curry de soja fermentada)." data-fr="La cuisine Limbu propose des plats comme le ‘sishnu’ (soupe aux orties), le ‘tongba’ (bière de millet) et le ‘kinema’ (curry de soja fermenté)." data-ne="लिम्बू पाककलामा परिकारहरू जस्तै ‘सिस्नु’ (सिस्नुको सुप), ‘तोङ्बा’ (कोदोको बियर) र ‘किनेमा’ (किण्वित सोयाबिन करी) समावेश छन्।" data-hi="लिम्बू व्यंजनों में ‘सिश्नु’ (बिच्छू बूटी का सूप), ‘टोंग्बा’ (बाजरा बीयर), और ‘किनेमा’ (किण्वित सोयाबीन करी) जैसे व्यंजन शामिल हैं।" data-zh="林布人的饮食包括‘sishnu’（荨麻汤）、‘tongba’（小米啤酒）和‘kinema’（发酵大豆咖喱）。" data-ja="リムブ料理には「シシヌ」（イラクサのスープ）、「トングバ」（雑穀ビール）、そして「キネマ」（発酵大豆カレー）などの料理があります。">
+                                    Limbu cuisine features dishes like ‘sishnu’ (nettle soup), ‘tongba’ (millet beer), and ‘kinema’ (fermented soybean curry).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Tamang Food -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="sel.jpg" alt="Tamang Food" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Tamang Food" data-es="Comida Tamang" data-fr="Nourriture Tamang" data-ne="तामाङको खाना" data-hi="तामांग का खाना" data-zh="塔芒食物" data-ja="タマングの食べ物">
+                                    Tamang Food
+                                </strong>
+                                <p class="translatable" data-en="Tamang cuisine is known for dishes like ‘sel roti’ (rice flour doughnut), ‘aloo tama’ (potato and bamboo shoot curry), and ‘yak meat’ dishes." data-es="La cocina Tamang es conocida por platos como ‘sel roti’ (rosquilla de harina de arroz), ‘aloo tama’ (curry de papa y brote de bambú) y platos de carne de yak." data-fr="La cuisine Tamang est connue pour des plats comme le ‘sel roti’ (beignet à la farine de riz), le ‘aloo tama’ (curry de pommes de terre et de pousses de bambou) et les plats à base de viande de yak." data-ne="तामाङ पाककलामा ‘सेल रोटी’ (चामलको पीठोको डोनट), ‘आलु तामा’ (आलु र तामा करी), र ‘याक मासु’ जस्ता परिकारहरूका लागि परिचित छ।" data-hi="तामांग व्यंजन ‘सेल रोटी’ (चावल के आटे का डोनट), ‘आलू तामा’ (आलू और बांस के अंकुर की करी) और ‘याक मांस’ जैसे व्यंजनों के लिए जाना जाता है।" data-zh="塔芒人的饮食以‘sel roti’（米粉甜甜圈）、‘aloo tama’（土豆和竹笋咖喱）和‘牦牛肉’菜肴而闻名。" data-ja="タマング料理は「セルロティ」（米粉ドーナツ）、「アルタマ」（ジャガイモと竹の子のカレー）、そして「ヤクの肉」料理で知られています。">
+                                    Tamang cuisine is known for dishes like ‘sel roti’ (rice flour doughnut), ‘aloo tama’ (potato and bamboo shoot curry), and ‘yak meat’ dishes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        <h3 class="translatable" data-en="Cultural Sites in Dharan" data-es="Sitios culturales en Dharan" data-fr="Sites culturels à Dharan" data-ne="धरानका सांस्कृतिक स्थलहरू" data-hi="धरान में सांस्कृतिक स्थल" data-zh="达兰的文化景点" data-ja="ダランの文化的な場所">
+            Cultural Sites in Dharan
+        </h3>
+        <ul>
+            <div class="container my-5">
+                <div class="row g-4">
+                    <!-- Dantakali Temple -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="dan.jpeg" alt="Dantakali Temple" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Dantakali Temple" data-es="Templo Dantakali" data-fr="Temple Dantakali" data-ne="दन्तकाली मन्दिर" data-hi="दन्तकाली मंदिर" data-zh="丹塔卡里寺" data-ja="ダンタカリ寺院">
+                                    Dantakali Temple
+                                </strong>
+                                <p class="translatable" data-en="Dantakali Temple is a sacred Hindu temple dedicated to the goddess Dantakali. It is known for its religious significance and beautiful surroundings." data-es="El Templo Dantakali es un templo hindú sagrado dedicado a la diosa Dantakali. Es conocido por su importancia religiosa y sus hermosos alrededores." data-fr="Le Temple Dantakali est un temple hindou sacré dédié à la déesse Dantakali. Il est connu pour son importance religieuse et ses beaux environs." data-ne="दन्तकाली मन्दिर देवी दन्तकालीलाई समर्पित एक पवित्र हिन्दू मन्दिर हो। यो धार्मिक महत्त्व र सुन्दर परिवेशको लागि प्रसिद्ध छ।" data-hi="दन्तकाली मंदिर देवी दंतकाली को समर्पित एक पवित्र हिंदू मंदिर है। यह अपनी धार्मिक महत्वता और सुंदर परिवेश के लिए जाना जाता है।" data-zh="丹塔卡里寺是一座神圣的印度教寺庙，供奉丹塔卡里女神。它以其宗教意义和美丽的环境而闻名。" data-ja="ダンタカリ寺院はダンタカリ女神に捧げられた神聖なヒンドゥー教寺院です。宗教的重要性と美しい周囲で知られています。">
+                                    Dantakali Temple is a sacred Hindu temple dedicated to the goddess Dantakali. It is known for its religious significance and beautiful surroundings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Buddha Subba Temple -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="subb.jpg" alt="Buddha Subba Temple" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Buddha Subba Temple" data-es="Templo Buddha Subba" data-fr="Temple Buddha Subba" data-ne="बुद्ध सुब्बा मन्दिर" data-hi="बुद्ध सुब्बा मंदिर" data-zh="佛陀苏巴寺" data-ja="ブッダ・スッバ寺院">
+                                    Buddha Subba Temple
+                                </strong>
+                                <p class="translatable" data-en="Buddha Subba Temple is a famous religious site, believed to fulfill the wishes of its devotees. It is surrounded by bamboo groves and holds cultural significance." data-es="El Templo Buddha Subba es un sitio religioso famoso, que se cree que cumple los deseos de sus devotos. Está rodeado de bosquecillos de bambú y tiene un significado cultural." data-fr="Le Temple Buddha Subba est un site religieux célèbre, réputé pour exaucer les vœux de ses fidèles. Il est entouré de bosquets de bambous et revêt une importance culturelle." data-ne="बुद्ध सुब्बा मन्दिर एक प्रसिद्ध धार्मिक स्थल हो, जसले यसको भक्तहरूको ईच्छा पूरा गर्छ भनेर विश्वास गरिन्छ। यो बाँसका बगैंचाले घेरिएको छ र सांस्कृतिक महत्त्व राख्छ।" data-hi="बुद्ध सुब्बा मंदिर एक प्रसिद्ध धार्मिक स्थल है, जो अपने भक्तों की इच्छाओं को पूरा करने के लिए माना जाता है। यह बांस के झुरमुटों से घिरा हुआ है और सांस्कृतिक महत्व रखता है।" data-zh="佛陀苏巴寺是一个著名的宗教场所，据说能满足其信徒的愿望。它被竹林包围，具有文化意义。" data-ja="ブッダ・スッバ寺院はその信者の願いを叶えるとされる有名な宗教施設です。竹林に囲まれ、文化的な重要性を持っています。">
+                                    Buddha Subba Temple is a famous religious site, believed to fulfill the wishes of its devotees. It is surrounded by bamboo groves and holds cultural significance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Bhedetar -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center">
+                            <img src="bhe.jpg" alt="Bhedetar" class="card-img-top img-fluid rounded">
+                            <div class="card-body">
+                                <strong class="translatable d-block mb-2" data-en="Bhedetar" data-es="Bhedetar" data-fr="Bhedetar" data-ne="भेडेटार" data-hi="भेडेटार" data-zh="贝德塔尔" data-ja="ベデター">
+                                    Bhedetar
+                                </strong>
+                                <p class="translatable" data-en="Bhedetar is a hill station near Dharan, known for its stunning views and pleasant climate. It is a popular destination for both locals and tourists." data-es="Bhedetar es una estación de montaña cerca de Dharan, conocida por sus impresionantes vistas y clima agradable. Es un destino popular tanto para locales como para turistas." data-fr="Bhedetar est une station de montagne près de Dharan, connue pour ses vues imprenables et son climat agréable. C'est une destination populaire pour les locaux et les touristes." data-ne="भेडेटार धरान नजिकैको एक पहाडी स्थल हो, जुन यसको सुन्दर दृश्यहरू र रमणीय मौसमको लागि प्रसिद्ध छ। यो स्थानीय र पर्यटकहरूको लागि लोकप्रिय गन्तव्य हो।" data-hi="भेडेटार धरान के पास एक हिल स्टेशन है, जो अपनी शानदार दृश्यों और सुखद जलवायु के लिए जाना जाता है। यह स्थानीय और पर्यटकों दोनों के लिए एक लोकप्रिय गंतव्य है।" data-zh="贝德塔尔是达兰附近的一个山地车站，以其迷人的景色和宜人的气候而闻名。是当地人和游客的热门去处。" data-ja="ベデターは、ダラン近くのヒルステーションで、その美しい景色と心地よい気候で知られています。地元の人々や観光客に人気のある目的地です。">
+                                    Bhedetar is a hill station near Dharan, known for its stunning views and pleasant climate. It is a popular destination for both locals and tourists.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        
+        
+    </div>
+
+    <footer class="custom-footer-bg text-white text-center py-3">
+        <p class="translatable" data-en="© 2025 Explore Nepal. All rights reserved." data-es="© 2025 Explora Nepal. Todos los derechos reservados." data-fr="© 2025 Explorez le Népal. Tous droits réservés." data-ne="© 2025 नेपाल अन्वेषण। सबै अधिकार सुरक्षित।" data-hi="© 2025 Explore Nepal. सर्वाधिकार सुरक्षित।" data-zh="© 2025 探索尼泊尔。版权所有。" data-ja="© 2025 ネパール探険。すべての権利を保有。">
+            © 2025 Explore Nepal. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
