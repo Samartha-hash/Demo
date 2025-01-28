@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nepalese Festivals Calendar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.orange-coral.min.css">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            position: relative;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .go-back-btn {
+            background-color: #ecad59;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .go-back-btn:hover {
+            background-color: #f5813e;
+        }
+    </style>
+</head>
+<body>
+    <div id="calendar"></div>
+    
+    <div class="footer">
+        <a href="index.php" class="go-back-btn">← Go Back to Home</a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#calendar').evoCalendar({
+            theme: 'Orange Coral',
+            language: 'en',
+            format: 'yyyy/mm/dd',
+            todayHighlight: true,
+            calendarEvents: [
+                // Existing Festivals
+                {
+                    id: 'dashain',
+                    name: 'Dashain (Durga Puja)',
+                    date: '2025/10/02',
+                    type: 'holiday',
+                    description: 'Largest Hindu festival celebrating victory of good over evil'
+                },
+                {
+                    id: 'tihar',
+                    name: 'Tihar Festival',
+                    date: '2025/10/25',
+                    type: 'holiday',
+                    description: 'Festival of lights, honoring animals and siblings'
+                },
+                {
+                    id: 'holi',
+                    name: 'Holi Festival',
+                    date: '2025/03/16',
+                    type: 'holiday',
+                    description: 'Colorful spring festival of colors and joy'
+                },
+
+                {
+                    id: 'indra-jatra',
+                    name: 'Indra Jatra',
+                    date: '2025/09/01',
+                    type: 'holiday',
+                    description: 'Newar festival honoring Indra, the god of rain'
+                },
+                {
+                    id: 'janai-purnima',
+                    name: 'Janai Purnima',
+                    date: '2025/08/10',
+                    type: 'holiday',
+                    description: 'Sacred thread ceremony and festival of the Brahmin and Chhetri communities'
+                },
+                {
+                    id: 'constitution-day',
+                    name: 'Constitution Day',
+                    date: '2025/09/20',
+                    type: 'holiday',
+                    description: 'Commemorates the adoption of Nepal\'s constitution'
+                },
+
+
+                // Additional Magh Month Festivals
+                {
+                    id: 'basant-panchami',
+                    name: 'Basant Panchami',
+                    date: '2025/02/03',
+                    type: 'holiday',
+                    description: 'Spring festival dedicated to Saraswati, the goddess of knowledge and arts'
+                },
+                {
+                    id: 'saraswati-puja',
+                    name: 'Saraswati Puja',
+                    date: '2025/02/03',
+                    type: 'holiday',
+                    description: 'Worship of Saraswati, the goddess of learning and wisdom'
+                },
+                {
+                    id: 'madhav-narayan-festival',
+                    name: 'Madhav Narayan Festival',
+                    date: '2025/02/08',
+                    type: 'holiday',
+                    description: 'Religious festival where devotees take a holy bath in rivers and worship Lord Vishnu'
+                },
+
+                // Cultural Group Festivals
+                {
+                    id: 'tamang-lhosar',
+                    name: 'Tamang Lhosar',
+                    date: '2025/01/30',
+                    type: 'holiday',
+                    description: 'Tibeto-Burman New Year celebrated by the Tamang community'
+                },
+                {
+                    id: 'magar-maghe-sankranti',
+                    name: 'Magar Maghe Sankranti',
+    		            date: '2025/01/14',
+                    type: 'holiday',
+                    description: 'Festival celebrating harvest and cultural heritage of Magar community'
+                },
+                {
+                    id: 'chhetri-janai-purnima',
+                    name: 'Chhetri Janai Purnima',
+                    date: '2025/08/10',
+                    type: 'holiday',
+                    description: 'Sacred thread ceremony for Chhetri community members'
+                },
+                {
+                    id: 'martyr-day',
+                    name: 'Martyrs\' Day',
+                    date: '2025/01/29',
+                    type: 'holiday',
+                    description: 'Remembers heroes who sacrificed for country'
+                },
+                {
+                    id: 'tharu-maghi',
+                    name: 'Tharu Maghi',
+                    date: '2025/01/14',
+                    type: 'holiday',
+                    description: 'New Year and harvest festival of the Tharu indigenous community'
+                },
+                {
+                    id: 'newar-mha-puja',
+                    name: 'Mha Puja',
+                    date: '2025/10/22',
+                    type: 'holiday',
+                    description: 'Newari festival of self-worship and celebrating individual identity'
+                },
+                {
+                    id: 'kiranti-udauli-udyauli',
+                    name: 'Udauli-Udyauli',
+                    date: '2025/11/15',
+                    type: 'holiday',
+                    description: 'Harvest festival celebrated by Kirant communities'
+                },
+                {
+                    id: 'rai-sakela',
+                    name: 'Sakela Festival',
+                    date: '2025/04/14',
+                    type: 'holiday',
+                    description: 'Traditional dance festival of the Rai indigenous community'
+                },
+                {
+                    id: 'limbu-udhauli',
+                    name: 'Limbu Udhauli',
+                    date: '2025/12/15',
+                    type: 'holiday',
+                    description: 'Harvest and nature worship festival of the Limbu community'
+                }
+            ]
+        });
+    });
+    </script>
+</body>
+</html>
